@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FA022777DA300FDA41D /* AppDelegate.swift */; };
+		04694FA322777DA300FDA41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FA222777DA300FDA41D /* ViewController.swift */; };
+		04694FA622777DA300FDA41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FA422777DA300FDA41D /* Main.storyboard */; };
+		04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04694FA722777DA300FDA41D /* Confort.xcdatamodeld */; };
+		04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAA22777DA500FDA41D /* Assets.xcassets */; };
+		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
+		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
+		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04694FB522777DA600FDA41D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04694F9522777DA300FDA41D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04694F9C22777DA300FDA41D;
+			remoteInfo = Confort;
+		};
+		04694FC022777DA600FDA41D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04694F9522777DA300FDA41D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04694F9C22777DA300FDA41D;
+			remoteInfo = Confort;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04694F9D22777DA300FDA41D /* Confort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Confort.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04694FA022777DA300FDA41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04694FA222777DA300FDA41D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04694FA522777DA300FDA41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04694FA822777DA300FDA41D /* Confort.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Confort.xcdatamodel; sourceTree = "<group>"; };
+		04694FAA22777DA500FDA41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04694FAD22777DA500FDA41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04694FAF22777DA500FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04694FB422777DA500FDA41D /* ConfortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04694FB822777DA600FDA41D /* ConfortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortTests.swift; sourceTree = "<group>"; };
+		04694FBA22777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
+		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04694F9A22777DA300FDA41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FB122777DA500FDA41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FBC22777DA600FDA41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04694F9422777DA300FDA41D = {
+			isa = PBXGroup;
+			children = (
+				04694F9F22777DA300FDA41D /* Confort */,
+				04694FB722777DA600FDA41D /* ConfortTests */,
+				04694FC222777DA600FDA41D /* ConfortUITests */,
+				04694F9E22777DA300FDA41D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04694F9E22777DA300FDA41D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04694F9D22777DA300FDA41D /* Confort.app */,
+				04694FB422777DA500FDA41D /* ConfortTests.xctest */,
+				04694FBF22777DA600FDA41D /* ConfortUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04694F9F22777DA300FDA41D /* Confort */ = {
+			isa = PBXGroup;
+			children = (
+				04694FA022777DA300FDA41D /* AppDelegate.swift */,
+				04694FA222777DA300FDA41D /* ViewController.swift */,
+				04694FA422777DA300FDA41D /* Main.storyboard */,
+				04694FAA22777DA500FDA41D /* Assets.xcassets */,
+				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
+				04694FAF22777DA500FDA41D /* Info.plist */,
+				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,
+			);
+			path = Confort;
+			sourceTree = "<group>";
+		};
+		04694FB722777DA600FDA41D /* ConfortTests */ = {
+			isa = PBXGroup;
+			children = (
+				04694FB822777DA600FDA41D /* ConfortTests.swift */,
+				04694FBA22777DA600FDA41D /* Info.plist */,
+			);
+			path = ConfortTests;
+			sourceTree = "<group>";
+		};
+		04694FC222777DA600FDA41D /* ConfortUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04694FC322777DA600FDA41D /* ConfortUITests.swift */,
+				04694FC522777DA600FDA41D /* Info.plist */,
+			);
+			path = ConfortUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04694F9C22777DA300FDA41D /* Confort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04694FC822777DA600FDA41D /* Build configuration list for PBXNativeTarget "Confort" */;
+			buildPhases = (
+				04694F9922777DA300FDA41D /* Sources */,
+				04694F9A22777DA300FDA41D /* Frameworks */,
+				04694F9B22777DA300FDA41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Confort;
+			productName = Confort;
+			productReference = 04694F9D22777DA300FDA41D /* Confort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04694FB322777DA500FDA41D /* ConfortTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04694FCB22777DA600FDA41D /* Build configuration list for PBXNativeTarget "ConfortTests" */;
+			buildPhases = (
+				04694FB022777DA500FDA41D /* Sources */,
+				04694FB122777DA500FDA41D /* Frameworks */,
+				04694FB222777DA500FDA41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04694FB622777DA600FDA41D /* PBXTargetDependency */,
+			);
+			name = ConfortTests;
+			productName = ConfortTests;
+			productReference = 04694FB422777DA500FDA41D /* ConfortTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04694FBE22777DA600FDA41D /* ConfortUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04694FCE22777DA600FDA41D /* Build configuration list for PBXNativeTarget "ConfortUITests" */;
+			buildPhases = (
+				04694FBB22777DA600FDA41D /* Sources */,
+				04694FBC22777DA600FDA41D /* Frameworks */,
+				04694FBD22777DA600FDA41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04694FC122777DA600FDA41D /* PBXTargetDependency */,
+			);
+			name = ConfortUITests;
+			productName = ConfortUITests;
+			productReference = 04694FBF22777DA600FDA41D /* ConfortUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04694F9522777DA300FDA41D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ADABestGroup;
+				TargetAttributes = {
+					04694F9C22777DA300FDA41D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					04694FB322777DA500FDA41D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04694F9C22777DA300FDA41D;
+					};
+					04694FBE22777DA600FDA41D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04694F9C22777DA300FDA41D;
+					};
+				};
+			};
+			buildConfigurationList = 04694F9822777DA300FDA41D /* Build configuration list for PBXProject "Confort" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04694F9422777DA300FDA41D;
+			productRefGroup = 04694F9E22777DA300FDA41D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04694F9C22777DA300FDA41D /* Confort */,
+				04694FB322777DA500FDA41D /* ConfortTests */,
+				04694FBE22777DA600FDA41D /* ConfortUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04694F9B22777DA300FDA41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
+				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
+				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FB222777DA500FDA41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FBD22777DA600FDA41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04694F9922777DA300FDA41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */,
+				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
+				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FB022777DA500FDA41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04694FBB22777DA600FDA41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04694FB622777DA600FDA41D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04694F9C22777DA300FDA41D /* Confort */;
+			targetProxy = 04694FB522777DA600FDA41D /* PBXContainerItemProxy */;
+		};
+		04694FC122777DA600FDA41D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04694F9C22777DA300FDA41D /* Confort */;
+			targetProxy = 04694FC022777DA600FDA41D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04694FA422777DA300FDA41D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04694FA522777DA300FDA41D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04694FAD22777DA500FDA41D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04694FC622777DA600FDA41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04694FC722777DA600FDA41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04694FC922777DA600FDA41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Confort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.Confort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04694FCA22777DA600FDA41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Confort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.Confort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04694FCC22777DA600FDA41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConfortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.ConfortTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confort.app/Confort";
+			};
+			name = Debug;
+		};
+		04694FCD22777DA600FDA41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConfortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.ConfortTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confort.app/Confort";
+			};
+			name = Release;
+		};
+		04694FCF22777DA600FDA41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConfortUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.ConfortUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Confort;
+			};
+			name = Debug;
+		};
+		04694FD022777DA600FDA41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ConfortUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ADABG.ConfortUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Confort;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04694F9822777DA300FDA41D /* Build configuration list for PBXProject "Confort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04694FC622777DA600FDA41D /* Debug */,
+				04694FC722777DA600FDA41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04694FC822777DA600FDA41D /* Build configuration list for PBXNativeTarget "Confort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04694FC922777DA600FDA41D /* Debug */,
+				04694FCA22777DA600FDA41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04694FCB22777DA600FDA41D /* Build configuration list for PBXNativeTarget "ConfortTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04694FCC22777DA600FDA41D /* Debug */,
+				04694FCD22777DA600FDA41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04694FCE22777DA600FDA41D /* Build configuration list for PBXNativeTarget "ConfortUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04694FCF22777DA600FDA41D /* Debug */,
+				04694FD022777DA600FDA41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04694FA722777DA300FDA41D /* Confort.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04694FA822777DA300FDA41D /* Confort.xcdatamodel */,
+			);
+			currentVersion = 04694FA822777DA300FDA41D /* Confort.xcdatamodel */;
+			path = Confort.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04694F9522777DA300FDA41D /* Project object */;
+}
