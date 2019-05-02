@@ -15,6 +15,14 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+		688B2EA8227B58190037B7C1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA7227B58190037B7C1 /* Step.swift */; };
+		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
+		688B2EAC227B5D860037B7C1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAB227B5D860037B7C1 /* Notification.swift */; };
+		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
+		68CBEB8F2278DD5700D100AF /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB8E2278DD5700D100AF /* Goal.swift */; };
+		68CBEB912278E48000D100AF /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB902278E48000D100AF /* Bar.swift */; };
+		68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB922278E4B300D100AF /* TypeOfGoal.swift */; };
+		68CBEB952278E65900D100AF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB942278E65900D100AF /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688B2EA7227B58190037B7C1 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		688B2EA9227B59C80037B7C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		688B2EAB227B5D860037B7C1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		688B2EAD227B5E000037B7C1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		68CBEB8E2278DD5700D100AF /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		68CBEB902278E48000D100AF /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		68CBEB922278E4B300D100AF /* TypeOfGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfGoal.swift; sourceTree = "<group>"; };
+		68CBEB942278E65900D100AF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +122,14 @@
 				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
 				04694FAF22777DA500FDA41D /* Info.plist */,
 				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,
+				68CBEB8E2278DD5700D100AF /* Goal.swift */,
+				68CBEB902278E48000D100AF /* Bar.swift */,
+				68CBEB922278E4B300D100AF /* TypeOfGoal.swift */,
+				688B2EA7227B58190037B7C1 /* Step.swift */,
+				68CBEB942278E65900D100AF /* Protocols.swift */,
+				688B2EA9227B59C80037B7C1 /* User.swift */,
+				688B2EAB227B5D860037B7C1 /* Notification.swift */,
+				688B2EAD227B5E000037B7C1 /* Badge.swift */,
 			);
 			path = Confort;
 			sourceTree = "<group>";
@@ -259,6 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
+				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,
+				688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */,
+				68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */,
+				68CBEB952278E65900D100AF /* Protocols.swift in Sources */,
+				68CBEB8F2278DD5700D100AF /* Goal.swift in Sources */,
+				688B2EAA227B59C80037B7C1 /* User.swift in Sources */,
+				688B2EAC227B5D860037B7C1 /* Notification.swift in Sources */,
 				04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */,
 				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
 				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
