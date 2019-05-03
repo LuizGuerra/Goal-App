@@ -11,8 +11,4 @@ import UIKit
 class GoalCell: UITableViewCell{
     @IBOutlet weak var titleGoal: UILabel!
     @IBOutlet weak var goalProgressBar: UIProgressView!
-    
-
 }
-
-

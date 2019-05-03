@@ -15,6 +15,9 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+		F2A782EC227CA431005EC14E /* GoalCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A782EB227CA431005EC14E /* GoalCreationStoryboard.storyboard */; };
+		F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
+		F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */; };
 		F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAC9852278D9AD0086B761 /* GoalPage.swift */; };
 		F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAC9872278E3AD0086B761 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,9 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A782EB227CA431005EC14E /* GoalCreationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GoalCreationStoryboard.storyboard; path = ../../../../Downloads/GoalCreationStoryboard.storyboard; sourceTree = "<group>"; };
+		F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalFirstPage.swift; sourceTree = "<group>"; };
+		F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNewGoalFirstPage.swift; sourceTree = "<group>"; };
 		F2CAC9852278D9AD0086B761 /* GoalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPage.swift; sourceTree = "<group>"; };
 		F2CAC9872278E3AD0086B761 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,10 +113,13 @@
 				04694FA222777DA300FDA41D /* ViewController.swift */,
 				04694FA422777DA300FDA41D /* Main.storyboard */,
 				F2CAC9852278D9AD0086B761 /* GoalPage.swift */,
+				F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */,
+				F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */,
 				F2CAC9872278E3AD0086B761 /* GoalCell.swift */,
 				04694FAA22777DA500FDA41D /* Assets.xcassets */,
 				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
 				04694FAF22777DA500FDA41D /* Info.plist */,
+				F2A782EB227CA431005EC14E /* GoalCreationStoryboard.storyboard */,
 				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,
 			);
 			path = Confort;
@@ -241,6 +250,7 @@
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
+				F2A782EC227CA431005EC14E /* GoalCreationStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +278,9 @@
 				04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */,
 				F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */,
 				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
+				F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
+				F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */,
 				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

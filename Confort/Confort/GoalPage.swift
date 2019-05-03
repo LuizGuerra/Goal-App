@@ -10,6 +10,8 @@ import UIKit
 
 class GoalPage: UIViewController{
     @IBOutlet weak var goalTableView: UITableView!
+    @IBOutlet weak var addGoal: UIButton!
+    
     
 }
 
