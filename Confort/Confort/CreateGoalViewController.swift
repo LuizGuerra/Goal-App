@@ -27,6 +27,8 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
         typePicker.reloadAllComponents()
         titleTextField.layer.cornerRadius = 6.67;
         descriptionTextView.layer.cornerRadius = 14;
+        descriptionTextView.delegate = self
+        
     }
 
     
@@ -40,6 +42,28 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerTypeData[row]
+        
+    
     }
     
 }
+
+
+extension UIColor {
+    
+    convenience init(hex: Int) {
+        let components = (
+            R: CGFloat((hex >> 16) & 0xff) / 255,
+            G: CGFloat((hex >> 08) & 0xff) / 255,
+            B: CGFloat((hex >> 00) & 0xff) / 255
+        )
+        self.init(red: components.R, green: components.G, blue: components.B, alpha: 1)
+    }
+}
+
+extension CreateGoalViewController : UITextViewDelegate{
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = nil
+    }
+}
+
