@@ -9,6 +9,8 @@
 import UIKit
 
 class TableViewCellNewGoalFirstPage: UITableViewCell{
+    @IBOutlet weak var stepTitle: UILabel!
+    @IBOutlet weak var stepDescription: UILabel!
     
     
 }

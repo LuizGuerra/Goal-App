@@ -15,10 +15,8 @@ struct Goal {
     var step: [Step]
     var color: UIColor
     var priority: Int
-    var start: Date
-    var end: Date
+    var progression: Float
     var typeOfGoal: TypeOfGoal
-    //var graphs: Graph
     var notification: Bool
     var categories: [String]
 }

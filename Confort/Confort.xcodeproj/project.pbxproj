@@ -71,6 +71,8 @@
 		68CBEB902278E48000D100AF /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		68CBEB922278E4B300D100AF /* TypeOfGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfGoal.swift; sourceTree = "<group>"; };
 		68CBEB942278E65900D100AF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F203AE982280B45A00390D31 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		F203AE992280B4CA00390D31 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalFirstPage.swift; sourceTree = "<group>"; };
 		F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNewGoalFirstPage.swift; sourceTree = "<group>"; };
 		F2CAC9852278D9AD0086B761 /* GoalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPage.swift; sourceTree = "<group>"; };
@@ -125,6 +127,8 @@
 		04694F9F22777DA300FDA41D /* Confort */ = {
 			isa = PBXGroup;
 			children = (
+				F203AE982280B45A00390D31 /* SF-Pro-Text-Regular.otf */,
+				F203AE992280B4CA00390D31 /* SF-Pro-Text-Medium.otf */,
 				68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */,
 				04694FA022777DA300FDA41D /* AppDelegate.swift */,
 				04694FA222777DA300FDA41D /* ViewController.swift */,
