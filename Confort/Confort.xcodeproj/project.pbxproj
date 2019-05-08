@@ -143,7 +143,7 @@
 				04DDAA43228348AA005E53EE /* Model */,
 				04DDAA402283486A005E53EE /* Font */,
 				04FA44D522821D5A00E994A1 /* Extensions */,
-				04FA44CE2282161A00E994A1 /* Color */,
+				04FA44CE2282161A00E994A1 /* SliderTheme */,
 				68CABAC4227CD45000B81559 /* Fonts */,
 				04694FA022777DA300FDA41D /* AppDelegate.swift */,
 				04694FA422777DA300FDA41D /* Main.storyboard */,
@@ -212,13 +212,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		04FA44CE2282161A00E994A1 /* Color */ = {
+		04FA44CE2282161A00E994A1 /* SliderTheme */ = {
 			isa = PBXGroup;
 			children = (
 				04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */,
 				04FA44D3228219F700E994A1 /* SliderTheme.swift */,
 			);
-			path = Color;
+			path = SliderTheme;
 			sourceTree = "<group>";
 		};
 		04FA44D522821D5A00E994A1 /* Extensions */ = {
