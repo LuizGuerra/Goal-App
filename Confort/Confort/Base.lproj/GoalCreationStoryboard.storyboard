@@ -24,16 +24,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-Y4-zhZ">
-                                <rect key="frame" x="15" y="54" width="384" height="48"/>
+                                <rect key="frame" x="15" y="54" width="384" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you want to call your goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-pN-bIK">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-CV-Shb">
-                                        <rect key="frame" x="0.0" y="28" width="384" height="20"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="384" height="21"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
@@ -42,16 +42,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="czu-Xr-eUj">
-                                <rect key="frame" x="15" y="132" width="384" height="138"/>
+                                <rect key="frame" x="15" y="133.5" width="384" height="138.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your motivation?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-xG-wfX">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-o5-xLd">
-                                        <rect key="frame" x="0.0" y="36" width="384" height="102"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="384" height="102"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="102" id="zWS-hn-hZN"/>
@@ -63,13 +63,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you label it? (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXB-xg-AVR">
-                                <rect key="frame" x="15" y="300" width="384" height="20"/>
+                                <rect key="frame" x="15" y="302" width="384" height="20.5"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-dI-Grs">
-                                <rect key="frame" x="0.0" y="350" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="352.5" width="414" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
                         </subviews>
@@ -78,7 +78,7 @@
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="KGo-dI-Grs" secondAttribute="trailing" id="5hm-5C-Zzl"/>
                             <constraint firstItem="oXB-xg-AVR" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="15" id="6tZ-e6-t3R"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="oXB-xg-AVR" secondAttribute="trailing" constant="15" id="Afx-bs-2Hl"/>
-                            <constraint firstItem="9B0-Bn-R98" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KGo-dI-Grs" secondAttribute="bottom" constant="30" id="DCT-4s-KF5"/>
+                            <constraint firstItem="9B0-Bn-R98" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KGo-dI-Grs" secondAttribute="bottom" constant="40" id="DCT-4s-KF5"/>
                             <constraint firstItem="sKL-Y4-zhZ" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="15" id="DYG-wI-m4W"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="czu-Xr-eUj" secondAttribute="trailing" constant="15" id="IGc-vb-xaF"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="sKL-Y4-zhZ" secondAttribute="trailing" constant="15" id="Iez-nP-NtL"/>
