@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Text-Medium.otf">
-            <string>SFProText-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Pro-->
         <scene sceneID="py8-em-Fby">
@@ -154,7 +149,7 @@
                     <navigationItem key="navigationItem" title="Goals" id="ue1-vs-qzR">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Fdd-0E-I73">
                             <connections>
-                                <segue destination="FpF-D3-oXB" kind="show" id="5zM-Uw-48j"/>
+                                <segue destination="pfm-N9-VJp" kind="show" id="fOB-W7-NRK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -167,124 +162,13 @@
             </objects>
             <point key="canvasLocation" x="-642.02898550724638" y="-434.59821428571428"/>
         </scene>
-        <!--New Goal-->
-        <scene sceneID="ekE-I0-Cwv">
+        <!--StepCreationStoryboard-->
+        <scene sceneID="IOR-JZ-KoP">
             <objects>
-                <viewController title="New Goal" id="FpF-D3-oXB" customClass="NewGoalFirstPage" customModule="Confort" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xv0-qc-8ko">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHt-7u-SMu">
-                                <rect key="frame" x="111" y="118" width="192.00000000000023" height="45.000000000000227"/>
-                                <color key="backgroundColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="8Vl-0f-SQs"/>
-                                    <constraint firstAttribute="width" constant="192" id="g00-Dx-gaa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
-                                <state key="normal" title="Set your goal" backgroundImage="Rectangle 2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="sg5-hm-qAu" kind="show" id="m4F-CF-RmA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ0-bc-4bi">
-                                <rect key="frame" x="20" y="326" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tlR-W3-dw6">
-                                <rect key="frame" x="0.0" y="359" width="414" height="454"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="96" id="Rer-cn-v56" customClass="TableViewCellNewGoalFirstPage" customModule="Confort" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="96"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rer-cn-v56" id="dN7-xr-6yr" customClass="TableViewCellNewGoalFirstPage" customModule="Confort" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step-disabilit" translatesAutoresizingMaskIntoConstraints="NO" id="rho-Kf-vMi">
-                                                    <rect key="frame" x="16" y="10" width="31" height="74"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's the first step to achieve your goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-uC-4Cn">
-                                                    <rect key="frame" x="55" y="15" width="332" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
-                                                    <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fz0-QW-Czy">
-                                <rect key="frame" x="33" y="233" width="380.5" height="59.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a56-sK-ryO">
-                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PLo-ca-uDj">
-                                        <rect key="frame" x="0.0" y="29.5" width="380.5" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-zT-MKD">
-                                                <rect key="frame" x="0.0" y="0.0" width="23" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Bu-Ww-hJU">
-                                                <rect key="frame" x="28" y="0.0" width="321" height="31"/>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvJ-Nm-i9I">
-                                                <rect key="frame" x="354" y="0.0" width="26.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="aHt-7u-SMu" firstAttribute="top" secondItem="5YP-5s-ONO" secondAttribute="top" constant="30" id="0re-FD-hSg"/>
-                            <constraint firstItem="aHt-7u-SMu" firstAttribute="centerX" secondItem="xv0-qc-8ko" secondAttribute="centerX" id="GZe-ZG-CGZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5YP-5s-ONO"/>
-                    </view>
-                    <connections>
-                        <outlet property="priorityBar" destination="5Bu-Ww-hJU" id="ee3-TV-cdz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sgM-1V-IJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="StepCreationStoryboard" id="pfm-N9-VJp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uM-v4-Koj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="-435.26785714285711"/>
-        </scene>
-        <!--GoalCreationStoryboard-->
-        <scene sceneID="Rnj-qS-8hb">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GoalCreationStoryboard" id="sg5-hm-qAu" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bNX-Hu-HsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="895" y="-449"/>
+            <point key="canvasLocation" x="-11" y="-435"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="W8C-u4-iqO">
@@ -307,8 +191,4 @@
             <point key="canvasLocation" x="-2636" y="244"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Rectangle 2" width="1506" height="1506"/>
-        <image name="step-disabilit" width="13" height="47"/>
-    </resources>
 </document>

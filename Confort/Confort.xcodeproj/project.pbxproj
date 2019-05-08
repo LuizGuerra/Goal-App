@@ -21,6 +21,7 @@
 		688B2EA8227B58190037B7C1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA7227B58190037B7C1 /* Step.swift */; };
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
+		68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */; };
 		68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */; };
 		68CABAC1227CAAD400B81559 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAB227B5D860037B7C1 /* Notification.swift */; };
 		68CABAC3227CB08B00B81559 /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CABAC2227CB08B00B81559 /* CreateGoalViewController.swift */; };
@@ -76,6 +77,7 @@
 		688B2EA9227B59C80037B7C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		688B2EAB227B5D860037B7C1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		688B2EAD227B5E000037B7C1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StepCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		68CABABF227CAA5400B81559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GoalCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		68CABAC2227CB08B00B81559 /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
 		68CABAC5227CD53100B81559 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
@@ -145,10 +147,11 @@
 				04FA44D522821D5A00E994A1 /* Extensions */,
 				04FA44CE2282161A00E994A1 /* Color */,
 				68CABAC4227CD45000B81559 /* Fonts */,
-				68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */,
 				04694FA022777DA300FDA41D /* AppDelegate.swift */,
 				04694FA422777DA300FDA41D /* Main.storyboard */,
 				F2575CB12283492100A7F709 /* FormTableViewController.swift */,
+				68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */,
+				68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */,
 				04694FAA22777DA500FDA41D /* Assets.xcassets */,
 				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
 				04694FAF22777DA500FDA41D /* Info.plist */,
@@ -342,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */,
 				04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */,
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
