@@ -15,6 +15,9 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
+		04FA44D4228219F700E994A1 /* SliderTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA44D3228219F700E994A1 /* SliderTheme.swift */; };
+		04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA44D622821DA500E994A1 /* UISliderExtension.swift */; };
 		688B2EA8227B58190037B7C1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA7227B58190037B7C1 /* Step.swift */; };
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
@@ -63,6 +66,9 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorCatalog.xcassets; sourceTree = "<group>"; };
+		04FA44D3228219F700E994A1 /* SliderTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTheme.swift; sourceTree = "<group>"; };
+		04FA44D622821DA500E994A1 /* UISliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderExtension.swift; sourceTree = "<group>"; };
 		688B2EA7227B58190037B7C1 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		688B2EA9227B59C80037B7C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		688B2EAB227B5D860037B7C1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		04694F9422777DA300FDA41D = {
 			isa = PBXGroup;
 			children = (
+				04FA44D522821D5A00E994A1 /* Extensions */,
+				04FA44CE2282161A00E994A1 /* Color */,
 				68CABAC4227CD45000B81559 /* Fonts */,
 				04694F9F22777DA300FDA41D /* Confort */,
 				04694FB722777DA600FDA41D /* ConfortTests */,
@@ -175,6 +183,23 @@
 				04694FC522777DA600FDA41D /* Info.plist */,
 			);
 			path = ConfortUITests;
+			sourceTree = "<group>";
+		};
+		04FA44CE2282161A00E994A1 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */,
+				04FA44D3228219F700E994A1 /* SliderTheme.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		04FA44D522821D5A00E994A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04FA44D622821DA500E994A1 /* UISliderExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		68CABAC4227CD45000B81559 /* Fonts */ = {
@@ -290,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */,
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
@@ -320,6 +346,7 @@
 			files = (
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,
+				04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */,
 				688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */,
 				68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */,
 				68CBEB952278E65900D100AF /* Protocols.swift in Sources */,
@@ -331,6 +358,7 @@
 				F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */,
 				68CABAC1227CAAD400B81559 /* Notification.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
+				04FA44D4228219F700E994A1 /* SliderTheme.swift in Sources */,
 				F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */,
 				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
 				68CABAC3227CB08B00B81559 /* CreateGoalViewController.swift in Sources */,

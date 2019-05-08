@@ -14,5 +14,8 @@ class NewGoalFirstPage: ViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        priorityBar.setAppSliderDefaults()
+        
     }
 }
+
