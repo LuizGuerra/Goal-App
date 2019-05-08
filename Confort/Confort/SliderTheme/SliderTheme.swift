@@ -10,7 +10,8 @@ import UIKit
 
 class SliderTheme {
     
-    static let sliderThumbImage = UIImage(named: "thumbVetor")
+    static let sliderThumbVector = UIImage(named: "thumbVetor")
+    static let sliderThumbImage = UIImage(named: "thumbImage")
     static let sliderBlueGreenColor = UIColor(named: "SliderBlueGreen" )
     static let sliderGrayColor = UIColor(named: "SliderGray" )
     
