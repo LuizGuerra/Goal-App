@@ -15,8 +15,10 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+		04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDAA55228395F8005E53EE /* TabBarIcon.swift */; };
+		04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */; };
 		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
-		04FA44D4228219F700E994A1 /* SliderTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA44D3228219F700E994A1 /* SliderTheme.swift */; };
+		04FA44D4228219F700E994A1 /* BarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA44D3228219F700E994A1 /* BarTheme.swift */; };
 		04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA44D622821DA500E994A1 /* UISliderExtension.swift */; };
 		688B2EA8227B58190037B7C1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA7227B58190037B7C1 /* Step.swift */; };
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
@@ -69,8 +71,10 @@
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DDAA4122834891005E53EE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		04DDAA4222834891005E53EE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		04DDAA55228395F8005E53EE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
+		04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarCatalog.xcassets; sourceTree = "<group>"; };
 		04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorCatalog.xcassets; sourceTree = "<group>"; };
-		04FA44D3228219F700E994A1 /* SliderTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTheme.swift; sourceTree = "<group>"; };
+		04FA44D3228219F700E994A1 /* BarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTheme.swift; sourceTree = "<group>"; };
 		04FA44D622821DA500E994A1 /* UISliderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderExtension.swift; sourceTree = "<group>"; };
 		688B2EA7227B58190037B7C1 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		688B2EA9227B59C80037B7C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 				04DDAA43228348AA005E53EE /* Model */,
 				04DDAA402283486A005E53EE /* Font */,
 				04FA44D522821D5A00E994A1 /* Extensions */,
-				04FA44CE2282161A00E994A1 /* SliderTheme */,
+				04FA44CE2282161A00E994A1 /* Theme */,
 				68CABAC4227CD45000B81559 /* Fonts */,
 				04694FA022777DA300FDA41D /* AppDelegate.swift */,
 				04694FA422777DA300FDA41D /* Main.storyboard */,
@@ -212,13 +216,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		04FA44CE2282161A00E994A1 /* SliderTheme */ = {
+		04DDAA53228395CA005E53EE /* TabBarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */,
+				04DDAA55228395F8005E53EE /* TabBarIcon.swift */,
+			);
+			path = TabBarIcons;
+			sourceTree = "<group>";
+		};
+		04DDAA54228395D5005E53EE /* BarThemes */ = {
 			isa = PBXGroup;
 			children = (
 				04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */,
-				04FA44D3228219F700E994A1 /* SliderTheme.swift */,
+				04FA44D3228219F700E994A1 /* BarTheme.swift */,
 			);
-			path = SliderTheme;
+			path = BarThemes;
+			sourceTree = "<group>";
+		};
+		04FA44CE2282161A00E994A1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				04DDAA54228395D5005E53EE /* BarThemes */,
+				04DDAA53228395CA005E53EE /* TabBarIcons */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		04FA44D522821D5A00E994A1 /* Extensions */ = {
@@ -347,6 +369,7 @@
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
+				04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */,
 				68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,9 +409,10 @@
 				F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */,
 				68CABAC1227CAAD400B81559 /* Notification.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
-				04FA44D4228219F700E994A1 /* SliderTheme.swift in Sources */,
+				04FA44D4228219F700E994A1 /* BarTheme.swift in Sources */,
 				F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */,
 				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
+				04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */,
 				68CABAC3227CB08B00B81559 /* CreateGoalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
