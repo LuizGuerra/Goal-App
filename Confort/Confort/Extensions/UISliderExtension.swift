@@ -20,7 +20,6 @@ extension UISlider {
         
         // setting sizes
         setThumbImage(SliderTheme.sliderThumbImage, for: .normal)
-        //setThumbImage( ---- , for: .highlighted)
         
     }
 
