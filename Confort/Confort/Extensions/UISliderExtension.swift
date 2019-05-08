@@ -16,6 +16,11 @@ extension UISlider {
         minimumTrackTintColor = SliderTheme.sliderBlueGreenColor
         maximumTrackTintColor = SliderTheme.sliderGrayColor
         thumbTintColor = SliderTheme.sliderBlueGreenColor
+        frame.origin = CGPoint(x: frame.minX, y: frame.minY + 12)
+        
+        // setting sizes
+        setThumbImage(SliderTheme.sliderThumbImage, for: .normal)
+        //setThumbImage( ---- , for: .highlighted)
         
     }
 
