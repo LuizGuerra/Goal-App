@@ -10,12 +10,16 @@ import UIKit
 
 class NewGoalFirstPage: ViewController{
     @IBOutlet weak var priorityBar: UISlider!
+    @IBOutlet weak var goalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        goalLabel.adjustsFontSizeToFitWidth = true
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         priorityBar.setAppSliderDefaults()
-        
     }
 }
 
