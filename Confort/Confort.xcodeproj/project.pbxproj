@@ -11,7 +11,6 @@
 		04694FA322777DA300FDA41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FA222777DA300FDA41D /* ViewController.swift */; };
 		04694FA622777DA300FDA41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FA422777DA300FDA41D /* Main.storyboard */; };
 		04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04694FA722777DA300FDA41D /* Confort.xcdatamodeld */; };
-		04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAA22777DA500FDA41D /* Assets.xcassets */; };
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
@@ -27,6 +26,7 @@
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
 		68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */; };
+		68985FCB22836B9100866B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
 		68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */; };
 		68CABAC1227CAAD400B81559 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAB227B5D860037B7C1 /* Notification.swift */; };
 		68CABAC3227CB08B00B81559 /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CABAC2227CB08B00B81559 /* CreateGoalViewController.swift */; };
@@ -63,7 +63,6 @@
 		04694FA222777DA300FDA41D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04694FA522777DA300FDA41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04694FA822777DA300FDA41D /* Confort.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Confort.xcdatamodel; sourceTree = "<group>"; };
-		04694FAA22777DA500FDA41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04694FAD22777DA500FDA41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04694FAF22777DA500FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04694FB422777DA500FDA41D /* ConfortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +86,7 @@
 		688B2EAB227B5D860037B7C1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		688B2EAD227B5E000037B7C1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StepCreationStoryboard.storyboard; sourceTree = "<group>"; };
+		68985FCA22836B9100866B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CABABF227CAA5400B81559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GoalCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		68CABAC2227CB08B00B81559 /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
 		68CABAC5227CD53100B81559 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 		04694F9F22777DA300FDA41D /* Confort */ = {
 			isa = PBXGroup;
 			children = (
+				68985FCA22836B9100866B7A /* Assets.xcassets */,
 				04DDAA44228348CB005E53EE /* View */,
 				04DDAA43228348AA005E53EE /* Model */,
 				04DDAA402283486A005E53EE /* Font */,
@@ -159,7 +160,6 @@
 				04694FA422777DA300FDA41D /* Main.storyboard */,
 				68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */,
 				68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */,
-				04694FAA22777DA500FDA41D /* Assets.xcassets */,
 				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
 				04694FAF22777DA500FDA41D /* Info.plist */,
 				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,

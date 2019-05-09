@@ -28,8 +28,10 @@ extension UISlider {
 class CustomSlider: UISlider {
     
     override func trackRect(forBounds bounds: CGRect) -> CGRect {
-        return CGRect(origin: bounds.origin, size: CGSize(width: bounds.width, height: 7))
+        let point = CGPoint(x: bounds.minX, y: bounds.midY-3)
+        return CGRect(origin: point, size: CGSize(width: bounds.width, height: 7))
     }
+
     
     
 }
