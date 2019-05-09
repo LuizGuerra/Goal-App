@@ -16,6 +16,7 @@
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
 		046D41352284B4B500873051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
 		046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
+		04D9C1042284C42D00AFC0C2 /* AddGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D9C1032284C42D00AFC0C2 /* AddGoals.storyboard */; };
 		04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDAA55228395F8005E53EE /* TabBarIcon.swift */; };
 		04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */; };
 		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
@@ -68,9 +69,9 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046D412D228497D900873051 /* AddSteps1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSteps1.storyboard; sourceTree = "<group>"; };
 		046D41302284A63400873051 /* GoalsCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoalsCatalog.xcassets; sourceTree = "<group>"; };
 		046D41322284A64D00873051 /* GoalsAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAsset.swift; sourceTree = "<group>"; };
+		04D9C1032284C42D00AFC0C2 /* AddGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddGoals.storyboard; sourceTree = "<group>"; };
 		04DDAA4122834891005E53EE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		04DDAA4222834891005E53EE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		04DDAA55228395F8005E53EE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -185,7 +186,7 @@
 		046D412C228497C600873051 /* AddSteps */ = {
 			isa = PBXGroup;
 			children = (
-				046D412D228497D900873051 /* AddSteps1.storyboard */,
+				04D9C1032284C42D00AFC0C2 /* AddGoals.storyboard */,
 			);
 			path = AddSteps;
 			sourceTree = "<group>";
@@ -388,12 +389,10 @@
 			files = (
 				68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */,
 				04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */,
-				046D412E228497D900873051 /* AddSteps1.storyboard in Resources */,
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
-				046D41312284A63400873051 /* GoalsCatalog.xcassets in Resources */,
-				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
 				046D41352284B4B500873051 /* Assets.xcassets in Resources */,
+				04D9C1042284C42D00AFC0C2 /* AddGoals.storyboard in Resources */,
 				04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */,
 				68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */,
 			);
@@ -433,7 +432,6 @@
 				F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */,
 				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
 				68CABAC1227CAAD400B81559 /* Notification.swift in Sources */,
-				046D41332284A64D00873051 /* GoalsAsset.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
 				04FA44D4228219F700E994A1 /* BarTheme.swift in Sources */,
 				F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */,
