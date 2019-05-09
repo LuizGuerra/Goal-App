@@ -16,12 +16,6 @@ extension UISlider {
         minimumTrackTintColor = SliderTheme.sliderBlueGreenColor
         maximumTrackTintColor = SliderTheme.sliderGrayColor
         thumbTintColor = SliderTheme.sliderBlueGreenColor
-        frame.origin = CGPoint(x: frame.minX, y: frame.minY + 12)
-        //frame.minY += 10
-        
-        // setting sizes
-        //setThumbImage(<#T##image: UIImage?##UIImage?#>, for: .normal)
-        //setThumbImage( ---- , for: .highlighted)
         
     }
 
@@ -30,8 +24,10 @@ extension UISlider {
 class CustomSlider: UISlider {
     
     override func trackRect(forBounds bounds: CGRect) -> CGRect {
-        return CGRect(origin: bounds.origin, size: CGSize(width: bounds.width, height: 7))
+        let point = CGPoint(x: bounds.minX, y: bounds.midY-3)
+        return CGRect(origin: point, size: CGSize(width: bounds.width, height: 7))
     }
+
     
     
 }
