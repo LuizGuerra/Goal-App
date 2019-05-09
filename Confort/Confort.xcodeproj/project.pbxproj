@@ -14,9 +14,8 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
-		046D412E228497D900873051 /* AddSteps1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046D412D228497D900873051 /* AddSteps1.storyboard */; };
-		046D41312284A63400873051 /* GoalsCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046D41302284A63400873051 /* GoalsCatalog.xcassets */; };
-		046D41332284A64D00873051 /* GoalsAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D41322284A64D00873051 /* GoalsAsset.swift */; };
+		046D41352284B4B500873051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
+		046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
 		04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDAA55228395F8005E53EE /* TabBarIcon.swift */; };
 		04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */; };
 		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
@@ -26,7 +25,6 @@
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
 		68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */; };
-		68985FCB22836B9100866B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
 		68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */; };
 		68CABAC1227CAAD400B81559 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAB227B5D860037B7C1 /* Notification.swift */; };
 		68CABAC3227CB08B00B81559 /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CABAC2227CB08B00B81559 /* CreateGoalViewController.swift */; };
@@ -34,7 +32,6 @@
 		68CBEB912278E48000D100AF /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB902278E48000D100AF /* Bar.swift */; };
 		68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB922278E4B300D100AF /* TypeOfGoal.swift */; };
 		68CBEB952278E65900D100AF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB942278E65900D100AF /* Protocols.swift */; };
-		F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
 		F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */; };
 		F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAC9852278D9AD0086B761 /* GoalPage.swift */; };
 		F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAC9872278E3AD0086B761 /* GoalCell.swift */; };
@@ -149,7 +146,6 @@
 		04694F9F22777DA300FDA41D /* Confort */ = {
 			isa = PBXGroup;
 			children = (
-				68985FCA22836B9100866B7A /* Assets.xcassets */,
 				04DDAA44228348CB005E53EE /* View */,
 				04DDAA43228348AA005E53EE /* Model */,
 				04DDAA402283486A005E53EE /* Font */,
@@ -162,6 +158,7 @@
 				68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */,
 				04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */,
 				04694FAF22777DA500FDA41D /* Info.plist */,
+				68985FCA22836B9100866B7A /* Assets.xcassets */,
 				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,
 			);
 			path = Confort;
@@ -396,6 +393,7 @@
 				046D41312284A63400873051 /* GoalsCatalog.xcassets in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
+				046D41352284B4B500873051 /* Assets.xcassets in Resources */,
 				04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */,
 				68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */,
 			);
@@ -422,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */,
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,
 				04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */,
@@ -433,7 +432,6 @@
 				04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */,
 				F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */,
 				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
-				F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */,
 				68CABAC1227CAAD400B81559 /* Notification.swift in Sources */,
 				046D41332284A64D00873051 /* GoalsAsset.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
@@ -624,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Confort/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,6 +640,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Confort/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
