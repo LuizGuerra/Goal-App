@@ -21,7 +21,6 @@
         <!--New Goal-->
         <scene sceneID="omG-u4-RSJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uZW-6g-wek" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="New Goal" id="jGK-Qu-Phr" customClass="NewGoalFirstPage" customModule="Confort" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bug-0x-oTD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -148,6 +147,7 @@
                         <outlet property="priorityBar" destination="9Wu-t2-GBF" id="Beg-FM-2ee"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZW-6g-wek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1921.7391304347827" y="-417.1875"/>
         </scene>
