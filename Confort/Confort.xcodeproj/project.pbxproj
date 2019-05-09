@@ -15,6 +15,7 @@
 		04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04694FAC22777DA500FDA41D /* LaunchScreen.storyboard */; };
 		04694FB922777DA600FDA41D /* ConfortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FB822777DA600FDA41D /* ConfortTests.swift */; };
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
+		046D412E228497D900873051 /* AddSteps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046D412D228497D900873051 /* AddSteps.storyboard */; };
 		04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDAA55228395F8005E53EE /* TabBarIcon.swift */; };
 		04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */; };
 		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
@@ -69,6 +70,7 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046D412D228497D900873051 /* AddSteps.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSteps.storyboard; sourceTree = "<group>"; };
 		04DDAA4122834891005E53EE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		04DDAA4222834891005E53EE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		04DDAA55228395F8005E53EE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 			path = ConfortUITests;
 			sourceTree = "<group>";
 		};
+		046D412C228497C600873051 /* AddSteps */ = {
+			isa = PBXGroup;
+			children = (
+				046D412D228497D900873051 /* AddSteps.storyboard */,
+			);
+			path = AddSteps;
+			sourceTree = "<group>";
+		};
 		04DDAA402283486A005E53EE /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		04DDAA44228348CB005E53EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				046D412C228497C600873051 /* AddSteps */,
 				F2CAC9852278D9AD0086B761 /* GoalPage.swift */,
 				F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */,
 				F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */,
@@ -366,6 +377,7 @@
 			files = (
 				68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */,
 				04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */,
+				046D412E228497D900873051 /* AddSteps.storyboard in Resources */,
 				04694FAE22777DA500FDA41D /* LaunchScreen.storyboard in Resources */,
 				04694FAB22777DA500FDA41D /* Assets.xcassets in Resources */,
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
