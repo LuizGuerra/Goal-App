@@ -13,6 +13,15 @@ extension UISlider {
     func setAppSliderDefaults() {
         
         // setting colors
+        minimumTrackTintColor = SliderTheme.sliderGrayColor
+        maximumTrackTintColor = SliderTheme.sliderGrayColor
+        thumbTintColor = SliderTheme.sliderGrayColor
+        
+    }
+    
+    func setAppSliderBlue() {
+        
+        // setting colors
         minimumTrackTintColor = SliderTheme.sliderBlueGreenColor
         maximumTrackTintColor = SliderTheme.sliderGrayColor
         thumbTintColor = SliderTheme.sliderBlueGreenColor

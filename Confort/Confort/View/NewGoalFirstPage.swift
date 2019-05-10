@@ -11,11 +11,12 @@ import UIKit
 class NewGoalFirstPage: ViewController{
     @IBOutlet weak var priorityBar: UISlider!
     @IBOutlet weak var goalLabel: UILabel!
+    @IBOutlet weak var disableSlider: CustomSlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         goalLabel.adjustsFontSizeToFitWidth = true
-        
+        disableSlider.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
