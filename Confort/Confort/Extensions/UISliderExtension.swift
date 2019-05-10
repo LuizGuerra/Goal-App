@@ -13,13 +13,18 @@ extension UISlider {
     func setAppSliderDefaults() {
         
         // setting colors
-        minimumTrackTintColor = BarThemes.sliderBlueGreenColor
-        maximumTrackTintColor = BarThemes.sliderGrayColor
-        thumbTintColor = BarThemes.sliderBlueGreenColor
-        frame.origin = CGPoint(x: frame.minX, y: frame.minY + 12)
+        minimumTrackTintColor = SliderTheme.sliderGrayColor
+        maximumTrackTintColor = SliderTheme.sliderGrayColor
+        thumbTintColor = SliderTheme.sliderGrayColor
         
-        // setting sizes
-        setThumbImage(BarThemes.sliderThumbImage, for: .normal)
+    }
+    
+    func setAppSliderBlue() {
+        
+        // setting colors
+        minimumTrackTintColor = SliderTheme.sliderBlueGreenColor
+        maximumTrackTintColor = SliderTheme.sliderGrayColor
+        thumbTintColor = SliderTheme.sliderBlueGreenColor
         
     }
 

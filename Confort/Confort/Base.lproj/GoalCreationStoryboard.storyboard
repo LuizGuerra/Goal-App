@@ -102,5 +102,13 @@
             </objects>
             <point key="canvasLocation" x="859.4202898550725" y="54.241071428571423"/>
         </scene>
+        <!--EnableStepCreation-->
+        <scene sceneID="vJB-E7-OEN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EnableStepCreation" id="IY2-b8-GWH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7f-cY-FPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="59"/>
+        </scene>
     </scenes>
 </document>
