@@ -25,7 +25,6 @@
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
 		68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */; };
-		68985FCB22836B9100866B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
 		68985FCD22849F3400866B7A /* EnableStepCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCC22849F3400866B7A /* EnableStepCreation.storyboard */; };
 		68985FCF2284A52700866B7A /* EnableStepCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68985FCE2284A52700866B7A /* EnableStepCreation.swift */; };
 		68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CABAC0227CAA5400B81559 /* GoalCreationStoryboard.storyboard */; };
