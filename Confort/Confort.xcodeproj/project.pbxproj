@@ -68,6 +68,8 @@
 		04694FBF22777DA600FDA41D /* ConfortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04694FC322777DA600FDA41D /* ConfortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfortUITests.swift; sourceTree = "<group>"; };
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046D41302284A63400873051 /* GoalsCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoalsCatalog.xcassets; sourceTree = "<group>"; };
+		046D41322284A64D00873051 /* GoalsAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAsset.swift; sourceTree = "<group>"; };
 		04DDAA4122834891005E53EE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		04DDAA4222834891005E53EE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		04DDAA55228395F8005E53EE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -179,6 +181,15 @@
 			path = ConfortUITests;
 			sourceTree = "<group>";
 		};
+		046D412F2284A45A00873051 /* GoalAssets */ = {
+			isa = PBXGroup;
+			children = (
+				046D41302284A63400873051 /* GoalsCatalog.xcassets */,
+				046D41322284A64D00873051 /* GoalsAsset.swift */,
+			);
+			path = GoalAssets;
+			sourceTree = "<group>";
+		};
 		04DDAA402283486A005E53EE /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +248,7 @@
 		04FA44CE2282161A00E994A1 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				046D412F2284A45A00873051 /* GoalAssets */,
 				04DDAA54228395D5005E53EE /* BarThemes */,
 				04DDAA53228395CA005E53EE /* TabBarIcons */,
 			);
