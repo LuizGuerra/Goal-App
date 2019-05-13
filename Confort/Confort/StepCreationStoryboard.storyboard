@@ -143,6 +143,8 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="disableSlider" destination="9Wu-t2-GBF" id="jP9-5z-d6f"/>
+                        <outlet property="goalLabel" destination="s89-lf-JnF" id="ovT-4k-MfZ"/>
                         <outlet property="priorityBar" destination="9Wu-t2-GBF" id="Beg-FM-2ee"/>
                     </connections>
                 </viewController>

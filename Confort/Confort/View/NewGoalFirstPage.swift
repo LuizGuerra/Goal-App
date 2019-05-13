@@ -8,18 +8,23 @@
 
 import UIKit
 
-class NewGoalFirstPage: UIViewController{
+class NewGoalFirstPage: ViewController{
     @IBOutlet weak var priorityBar: UISlider!
-    lazy var goalHolderLabel: UILabel? = view.viewWithTag(10) as? UILabel
-    
+    @IBOutlet weak var goalLabel: UILabel!
+    @IBOutlet weak var disableSlider: CustomSlider!
+	lazy var goalHolderLabel: UILabel? = view.viewWithTag(10) as? UILabel
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //goalLabel.adjustsFontSizeToFitWidth = true
+        disableSlider.isEnabled = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        priorityBar.setAppSliderDefaults()
+        print(goalHolderLabel)
     }
 }
 
