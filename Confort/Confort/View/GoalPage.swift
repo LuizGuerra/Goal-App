@@ -20,11 +20,20 @@ class GoalPage: UIViewController {
         goalTableView.rowHeight = UITableView.automaticDimension
         goalTableView.estimatedRowHeight = 100
         goalTableView.delegate = self
+        goalTableView.separatorStyle = .none
     }
     
     let goals: [Goal] = [
-    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: ["Preciso começar", "Fazer o segundo passo", "Fazer o terceiro"], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: ["Primeiro passo", "Segundo passo"], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Quero parar de fumar", description: "Preciso parar de fumar por conta da minha saúde", step: [], color: .clear, priority: 10, progression: 0.12, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.85, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 1, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.85, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 1, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.85, typeOfGoal: .money, notification: true, categories: []),
@@ -34,7 +43,7 @@ class GoalPage: UIViewController {
 extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return goals[section].step.count
+        return 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,6 +56,9 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
         }
         let goal = goals[section]
         cell.goal = goal
+        
+        cell.card.layer.cornerRadius = 20.0
+        cell.card.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         cell.goalProgressBar.progress = goal.progression
         cell.goalProgressBar.progressTintColor = SliderTheme.sliderBlueGreenColor
         cell.goalProgressBar.trackTintColor = SliderTheme.sliderGrayColor
@@ -60,14 +72,15 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "GoalStepCell") as? GoalStepCell else{
         return UITableViewCell()
         }
-        cell.stepTitle.text = goals[indexPath[0]].step[indexPath[1]]
+
+        cell.stepTitle.text = ""
         return cell
     }
 }

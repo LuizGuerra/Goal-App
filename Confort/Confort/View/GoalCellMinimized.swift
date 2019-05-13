@@ -11,6 +11,7 @@ import UIKit
 class GoalCellMinimized: UITableViewCell{
     @IBOutlet weak var titleGoal: UILabel!
     @IBOutlet weak var goalProgressBar: UIProgressView!
+    @IBOutlet weak var card: UIView!
     var goal: Goal?
     var isExpanded: Bool = false
 }

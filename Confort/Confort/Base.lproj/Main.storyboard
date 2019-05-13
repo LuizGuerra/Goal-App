@@ -96,9 +96,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Sj-5Y-SLE">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GoalCellMinimized" rowHeight="92" id="osl-pf-tJS" customClass="GoalCellMinimized" customModule="Confort" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="92"/>
@@ -107,28 +107,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-cj-5Y4">
-                                                    <rect key="frame" x="42" y="11" width="352" height="29"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thz-Uq-yee">
+                                                    <rect key="frame" x="20" y="5" width="375" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcN-eJ-yhb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="KKI-Qz-UMn">
-                                                            <rect key="frame" x="0.0" y="27.5" width="352" height="2.5"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="progressTintColor" red="0.04794200254" green="0.89813512559999997" blue="0.00030219164400000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </progressView>
-                                                    </subviews>
-                                                </stackView>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcN-eJ-yhb">
+                                                    <rect key="frame" x="45" y="24" width="349" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="KKI-Qz-UMn">
+                                                    <rect key="frame" x="43" y="60" width="334" height="3"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="progressTintColor" red="0.04794200254" green="0.89813512559999997" blue="0.00030219164400000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </progressView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="goalProgressBar" destination="KKI-Qz-UMn" id="BKa-gc-pDn"/>
-                                            <outlet property="titleGoal" destination="WcN-eJ-yhb" id="p3P-Gt-ubD"/>
+                                            <outlet property="card" destination="Thz-Uq-yee" id="ox3-XV-gaY"/>
+                                            <outlet property="goalProgressBar" destination="KKI-Qz-UMn" id="2BV-MV-0SJ"/>
+                                            <outlet property="titleGoal" destination="WcN-eJ-yhb" id="Lvg-PL-WPn"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalCellExpanded" rowHeight="107" id="aEb-oY-i8P" customClass="GoalCellExpanded" customModule="Confort" customModuleProvider="target">
@@ -178,7 +180,7 @@
                                                     <rect key="frame" x="45" y="11" width="348" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.04794200254" green="0.89813512559999997" blue="0.00030219164400000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -189,31 +191,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXM-Vh-gyd">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXM-Vh-gyd">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Goals" id="Ylv-93-Emu"/>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WFR-1f-IiO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WFR-1f-IiO" firstAttribute="leading" secondItem="IWN-w4-9dd" secondAttribute="leading" id="WGz-Jp-GVt"/>
-                            <constraint firstItem="XXM-Vh-gyd" firstAttribute="trailing" secondItem="WFR-1f-IiO" secondAttribute="trailing" id="ZLg-5i-A3E"/>
-                            <constraint firstItem="XXM-Vh-gyd" firstAttribute="leading" secondItem="WFR-1f-IiO" secondAttribute="leading" id="ahn-xR-gjC"/>
-                            <constraint firstItem="WFR-1f-IiO" firstAttribute="trailing" secondItem="IWN-w4-9dd" secondAttribute="trailing" id="kGA-n4-2h8"/>
                             <constraint firstItem="XXM-Vh-gyd" firstAttribute="bottom" secondItem="IWN-w4-9dd" secondAttribute="top" id="mMJ-3X-d3k"/>
-                            <constraint firstItem="WFR-1f-IiO" firstAttribute="top" secondItem="XXM-Vh-gyd" secondAttribute="bottom" id="tNR-wU-1Cy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IWN-w4-9dd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Goals" id="oQM-wV-Kdd"/>
                     <navigationItem key="navigationItem" title="Goals" id="ue1-vs-qzR">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Fdd-0E-I73">
+                            <color key="tintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="pfm-N9-VJp" kind="show" id="fOB-W7-NRK"/>
                             </connections>
