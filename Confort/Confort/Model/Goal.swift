@@ -12,7 +12,7 @@ import UIKit
 struct Goal {
     var title: String
     var description: String
-    var step: [Step]
+    var step: [String]
     var color: UIColor
     var priority: Int
     var progression: Float

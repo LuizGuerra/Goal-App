@@ -8,35 +8,49 @@
 
 import UIKit
 
-class GoalPage: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class GoalPage: UIViewController {
     @IBOutlet weak var goalTableView: UITableView!
     @IBOutlet weak var addGoal: UIBarButtonItem!
+    var expanded: [IndexPath] = []
+    var sections: [Goal] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         goalTableView.dataSource = self
-        goalTableView.rowHeight = 100
+        goalTableView.rowHeight = UITableView.automaticDimension
+        goalTableView.estimatedRowHeight = 100
         goalTableView.delegate = self
     }
     
+    let goals: [Goal] = [
+    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: ["Preciso começar", "Fazer o segundo passo", "Fazer o terceiro"], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Quero parar de fumar", description: "Preciso parar de fumar por conta da minha saúde", step: [], color: .clear, priority: 10, progression: 0.12, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.85, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 1, typeOfGoal: .money, notification: true, categories: [])]
+}
+
+extension GoalPage: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return goals.count
+        return goals[section].step.count
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.goals.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "prototype") as? GoalCell else{
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "GoalCellMinimized") as? GoalCellMinimized else{
             return UITableViewCell()
         }
-        let goal = goals[indexPath.row]
-        
+        let goal = goals[section]
+        cell.goal = goal
         cell.goalProgressBar.progress = goal.progression
-        cell.goalProgressBar.progressTintColor = #colorLiteral(red: 0.1098039216, green: 0.8470588235, blue: 1, alpha: 1)
-        cell.goalProgressBar.trackTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        cell.goalProgressBar.transform = cell.goalProgressBar.transform.scaledBy(x: 1, y: 5)
+        cell.goalProgressBar.progressTintColor = SliderTheme.sliderBlueGreenColor
+        cell.goalProgressBar.trackTintColor = SliderTheme.sliderGrayColor
+        cell.goalProgressBar.transform = CGAffineTransform(scaleX: 1, y:5)
         cell.goalProgressBar.layer.cornerRadius = 8
         cell.goalProgressBar.clipsToBounds = true
         cell.goalProgressBar.layer.sublayers![1].cornerRadius = 8
@@ -45,15 +59,16 @@ class GoalPage: UIViewController, UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
     
-    
-    let goals: [Goal] = [
-    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
-    Goal(title: "Quero parar de fumar", description: "Preciso parar de fumar por conta da minha saúde", step: [], color: .clear, priority: 10, progression: 0.12, typeOfGoal: .money, notification: true, categories: []),
-    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
-    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
-    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 0.85, typeOfGoal: .money, notification: true, categories: []),
-    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: [], color: .clear, priority: 10, progression: 1, typeOfGoal: .money, notification: true, categories: [])]
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "GoalStepCell") as? GoalStepCell else{
+        return UITableViewCell()
+        }
+        cell.stepTitle.text = goals[indexPath[0]].step[indexPath[1]]
+        return cell
+    }
 }
 

@@ -8,7 +8,9 @@
 
 import UIKit
 
-class GoalCell: UITableViewCell{
+class GoalCellMinimized: UITableViewCell{
     @IBOutlet weak var titleGoal: UILabel!
     @IBOutlet weak var goalProgressBar: UIProgressView!
+    var goal: Goal?
+    var isExpanded: Bool = false
 }
