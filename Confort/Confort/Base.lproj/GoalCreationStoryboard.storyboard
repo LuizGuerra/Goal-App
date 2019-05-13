@@ -114,11 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="9B0-Bn-R98"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Goal" id="FNl-1Q-jGu">
-                        <barButtonItem key="rightBarButtonItem" image="checkButtonAsset" id="yZn-h3-kRC">
-                            <connections>
-                                <segue destination="pv5-2w-RSP" kind="custom" id="chL-7G-jXU"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="checkButtonAsset" id="yZn-h3-kRC"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -130,14 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ra-id-HvG" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="859.4202898550725" y="54.241071428571423"/>
-        </scene>
-        <!--AddGoals-->
-        <scene sceneID="2aB-C9-PAv">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AddGoals" storyboardName="AddGoals" id="pv5-2w-RSP" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4cf-CO-eQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1451" y="54"/>
         </scene>
     </scenes>
     <resources>
