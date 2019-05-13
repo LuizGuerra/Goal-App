@@ -11,5 +11,7 @@ import UIKit
 class GoalsAsset {
     
     static let checkButtonAsset = UIImage(named: "checkButtonAsset")
+    static let incompletedGoal = UIImage(named: "incompletedGoal")
+    static let newGOal = UIImage(named: "newGoal")
     
 }

@@ -114,9 +114,9 @@
                         <viewLayoutGuide key="safeArea" id="9B0-Bn-R98"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Goal" id="FNl-1Q-jGu">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="yZn-h3-kRC">
+                        <barButtonItem key="rightBarButtonItem" image="checkButtonAsset" id="yZn-h3-kRC">
                             <connections>
-                                <segue destination="pv5-2w-RSP" kind="presentation" id="JBF-tj-int"/>
+                                <segue destination="pv5-2w-RSP" kind="custom" id="chL-7G-jXU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
