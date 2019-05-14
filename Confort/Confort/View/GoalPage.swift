@@ -14,6 +14,10 @@ class GoalPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.changeTabBarCollorToGradient()
+        
+        
         goalTableView.dataSource = self
         goalTableView.rowHeight = UITableView.automaticDimension
         goalTableView.estimatedRowHeight = 100
