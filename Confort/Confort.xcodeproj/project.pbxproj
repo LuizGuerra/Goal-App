@@ -35,6 +35,9 @@
 		68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB922278E4B300D100AF /* TypeOfGoal.swift */; };
 		68CBEB952278E65900D100AF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB942278E65900D100AF /* Protocols.swift */; };
 		F2575CB22283492100A7F709 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2575CB12283492100A7F709 /* FormTableViewController.swift */; };
+		F27A56A6228B2CBD003FE3D8 /* GoalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */; };
+		F27A56A8228B2F59003FE3D8 /* DetailGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */; };
+		F27A56AA228B2FD5003FE3D8 /* DetailStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */; };
 		F2938ECB22849D60008423DD /* GoalCellExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECA22849D60008423DD /* GoalCellExpanded.swift */; };
 		F2938ECF2284BBFA008423DD /* GoalStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECE2284BBFA008423DD /* GoalStepCell.swift */; };
 		F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
@@ -98,6 +101,9 @@
 		68CBEB922278E4B300D100AF /* TypeOfGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfGoal.swift; sourceTree = "<group>"; };
 		68CBEB942278E65900D100AF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		F2575CB12283492100A7F709 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetail.swift; sourceTree = "<group>"; };
+		F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoalCell.swift; sourceTree = "<group>"; };
+		F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStepCell.swift; sourceTree = "<group>"; };
 		F2938ECA22849D60008423DD /* GoalCellExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellExpanded.swift; sourceTree = "<group>"; };
 		F2938ECE2284BBFA008423DD /* GoalStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalStepCell.swift; sourceTree = "<group>"; };
 		F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalFirstPage.swift; sourceTree = "<group>"; };
@@ -220,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				F2CAC9852278D9AD0086B761 /* GoalPage.swift */,
+				F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */,
+				F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */,
+				F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */,
 				F2938ECE2284BBFA008423DD /* GoalStepCell.swift */,
 				F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */,
 				F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */,
@@ -415,6 +424,8 @@
 				046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */,
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,
+				F27A56A6228B2CBD003FE3D8 /* GoalDetail.swift in Sources */,
+				F27A56AA228B2FD5003FE3D8 /* DetailStepCell.swift in Sources */,
 				04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */,
 				688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */,
 				68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */,
@@ -428,12 +439,13 @@
 				F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */,
 				04694FA322777DA300FDA41D /* ViewController.swift in Sources */,
 				04FA44D4228219F700E994A1 /* BarTheme.swift in Sources */,
+				F27A56A8228B2F59003FE3D8 /* DetailGoalCell.swift in Sources */,
 				F2575CB22283492100A7F709 /* FormTableViewController.swift in Sources */,
 				F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */,
 				68CABAC1227CAAD400B81559 /* Notification.swift in Sources */,
 				F2CAC9882278E3AD0086B761 /* GoalCellMinimized.swift in Sources */,
-				04FA44D4228219F700E994A1 /* SliderTheme.swift in Sources */,
-				F2CAC9882278E3AD0086B761 /* GoalCell.swift in Sources */,
+				04FA44D4228219F700E994A1 /* BarTheme.swift in Sources */,
+				F2CAC9882278E3AD0086B761 /* GoalCellMinimized.swift in Sources */,
 				F2B6C5A3227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift in Sources */,
 				04694FA122777DA300FDA41D /* AppDelegate.swift in Sources */,
 				04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */,

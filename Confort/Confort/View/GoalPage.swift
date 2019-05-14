@@ -11,8 +11,6 @@ import UIKit
 class GoalPage: UIViewController {
     @IBOutlet weak var goalTableView: UITableView!
     @IBOutlet weak var addGoal: UIBarButtonItem!
-    var expanded: [IndexPath] = []
-    var sections: [Goal] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,44 +41,44 @@ class GoalPage: UIViewController {
 extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return goals.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.goals.count
+//    SEGUE FOR DETAILS
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let info = goals[indexPath[1]]
+        self.performSegue(withIdentifier: "showDetails", sender: info)
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails", let detailVC = segue.destination as? GoalDetail, let selectedInfo = sender as? Goal{
+            detailVC.goal = selectedInfo
+            print(selectedInfo.step[0])
+        }
+    }
+//    END SEGUE FOR DETAILS
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "GoalCellMinimized") as? GoalCellMinimized else{
             return UITableViewCell()
         }
-        let goal = goals[section]
+        let goal = goals[indexPath[1]]
         cell.goal = goal
-        
         cell.card.layer.cornerRadius = 20.0
         cell.card.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         cell.goalProgressBar.progress = goal.progression
-        cell.goalProgressBar.progressTintColor = SliderTheme.sliderBlueGreenColor
-        cell.goalProgressBar.trackTintColor = SliderTheme.sliderGrayColor
+        cell.goalProgressBar.progressTintColor = BarThemes.sliderBlueGreenColor
+        cell.goalProgressBar.trackTintColor = BarThemes.sliderGrayColor
         cell.goalProgressBar.transform = CGAffineTransform(scaleX: 1, y:5)
         cell.goalProgressBar.layer.cornerRadius = 8
         cell.goalProgressBar.clipsToBounds = true
         cell.goalProgressBar.layer.sublayers![1].cornerRadius = 8
         cell.goalProgressBar.subviews[1].clipsToBounds = true
         cell.titleGoal.text = goal.title
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 80
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = goalTableView.dequeueReusableCell(withIdentifier: "GoalStepCell") as? GoalStepCell else{
-        return UITableViewCell()
-        }
-
-        cell.stepTitle.text = ""
         return cell
     }
 }
