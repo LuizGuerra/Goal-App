@@ -16,6 +16,8 @@
 		04694FC422777DA600FDA41D /* ConfortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694FC322777DA600FDA41D /* ConfortUITests.swift */; };
 		046D41352284B4B500873051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCA22836B9100866B7A /* Assets.xcassets */; };
 		046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
+		04AE5020228B3FC80018E1FA /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE501F228B3FC80018E1FA /* UIVIewExtension.swift */; };
+		04AE5022228B42D60018E1FA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE5021228B42D60018E1FA /* UIViewControllerExtension.swift */; };
 		04DDAA56228395F8005E53EE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDAA55228395F8005E53EE /* TabBarIcon.swift */; };
 		04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DDAA572283961D005E53EE /* TabBarCatalog.xcassets */; };
 		04FA44D22282196C00E994A1 /* ColorCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA44D12282196C00E994A1 /* ColorCatalog.xcassets */; };
@@ -72,6 +74,8 @@
 		04694FC522777DA600FDA41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046D41302284A63400873051 /* GoalsCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GoalsCatalog.xcassets; sourceTree = "<group>"; };
 		046D41322284A64D00873051 /* GoalsAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAsset.swift; sourceTree = "<group>"; };
+		04AE501F228B3FC80018E1FA /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		04AE5021228B42D60018E1FA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		04DDAA4122834891005E53EE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		04DDAA4222834891005E53EE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		04DDAA55228395F8005E53EE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				04FA44D622821DA500E994A1 /* UISliderExtension.swift */,
+				04AE501F228B3FC80018E1FA /* UIVIewExtension.swift */,
+				04AE5021228B42D60018E1FA /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,7 +423,9 @@
 				046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */,
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,
+				04AE5022228B42D60018E1FA /* UIViewControllerExtension.swift in Sources */,
 				04FA44D722821DA500E994A1 /* UISliderExtension.swift in Sources */,
+				04AE5020228B3FC80018E1FA /* UIVIewExtension.swift in Sources */,
 				688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */,
 				68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */,
 				68CBEB952278E65900D100AF /* Protocols.swift in Sources */,

@@ -23,18 +23,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-Y4-zhZ">
-                                <rect key="frame" x="14" y="124" width="384" height="49.5"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-Y4-zhZ">
+                                <rect key="frame" x="16" y="124" width="382" height="59.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you want to call your goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-pN-bIK">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-CV-Shb">
-                                        <rect key="frame" x="0.0" y="28.5" width="384" height="21"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="382" height="31"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="AGc-fz-OEV"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -42,16 +45,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="czu-Xr-eUj">
-                                <rect key="frame" x="14" y="203.5" width="384" height="138.5"/>
+                                <rect key="frame" x="16" y="213.5" width="382" height="138.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your motivation?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-xG-wfX">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-o5-xLd">
-                                        <rect key="frame" x="0.0" y="36.5" width="384" height="102"/>
+                                    <textView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-o5-xLd">
+                                        <rect key="frame" x="0.0" y="36.5" width="382" height="102"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="102" id="zWS-hn-hZN"/>
@@ -63,13 +66,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you label it? (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXB-xg-AVR">
-                                <rect key="frame" x="14" y="372" width="384" height="20.5"/>
+                                <rect key="frame" x="16" y="382" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                 <color key="textColor" red="0.33725490196078434" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-dI-Grs">
-                                <rect key="frame" x="0.0" y="422.5" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="432.5" width="414" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tth-KG-gtW">
@@ -98,16 +101,16 @@
                         <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="KGo-dI-Grs" secondAttribute="trailing" id="5hm-5C-Zzl"/>
-                            <constraint firstItem="oXB-xg-AVR" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="14" id="6tZ-e6-t3R"/>
+                            <constraint firstItem="oXB-xg-AVR" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="16" id="6tZ-e6-t3R"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="oXB-xg-AVR" secondAttribute="trailing" constant="16" id="Afx-bs-2Hl"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KGo-dI-Grs" secondAttribute="bottom" constant="40" id="DCT-4s-KF5"/>
-                            <constraint firstItem="sKL-Y4-zhZ" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="14" id="DYG-wI-m4W"/>
+                            <constraint firstItem="sKL-Y4-zhZ" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="16" id="DYG-wI-m4W"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="czu-Xr-eUj" secondAttribute="trailing" constant="16" id="IGc-vb-xaF"/>
                             <constraint firstItem="9B0-Bn-R98" firstAttribute="trailing" secondItem="sKL-Y4-zhZ" secondAttribute="trailing" constant="16" id="Iez-nP-NtL"/>
                             <constraint firstItem="KGo-dI-Grs" firstAttribute="top" secondItem="oXB-xg-AVR" secondAttribute="bottom" constant="30" id="LEE-im-xMN"/>
                             <constraint firstItem="KGo-dI-Grs" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" id="OJP-bK-Uei"/>
                             <constraint firstItem="sKL-Y4-zhZ" firstAttribute="top" secondItem="9B0-Bn-R98" secondAttribute="top" constant="36" id="Z2n-bX-FMs"/>
-                            <constraint firstItem="czu-Xr-eUj" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="14" id="c77-RG-Qnu"/>
+                            <constraint firstItem="czu-Xr-eUj" firstAttribute="leading" secondItem="9B0-Bn-R98" secondAttribute="leading" constant="16" id="c77-RG-Qnu"/>
                             <constraint firstItem="czu-Xr-eUj" firstAttribute="top" secondItem="sKL-Y4-zhZ" secondAttribute="bottom" constant="30" id="gst-ft-7R7"/>
                             <constraint firstItem="oXB-xg-AVR" firstAttribute="top" secondItem="czu-Xr-eUj" secondAttribute="bottom" constant="30" id="nkk-DD-3j8"/>
                         </constraints>

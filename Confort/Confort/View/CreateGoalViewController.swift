@@ -21,13 +21,19 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.titleTextField.addShadowToView()
+        self.descriptionTextView.addShadowToView()
+        self.typePicker.addShadowToView()
+        
+        self.changeTabBarCollorToWhite()
 
         typePicker.delegate = self
         typePicker.dataSource = self
         typePicker.reloadAllComponents()
         titleTextField.layer.cornerRadius = 6.67;
         descriptionTextView.layer.cornerRadius = 14;
-        descriptionTextView.delegate = self
+//        descriptionTextView.delegate = self
         
     }
 
@@ -42,8 +48,6 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerTypeData[row]
-        
-    
     }
     
 }
