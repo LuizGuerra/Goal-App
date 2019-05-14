@@ -14,6 +14,10 @@ class GoalPage: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.changeTabBarCollorToGradient()
+        
+        
         goalTableView.dataSource = self
         goalTableView.rowHeight = 100
         goalTableView.delegate = self
@@ -34,8 +38,8 @@ class GoalPage: UIViewController, UITableViewDataSource, UITableViewDelegate{
         let goal = goals[indexPath.row]
         
         cell.goalProgressBar.progress = goal.progression
-        cell.goalProgressBar.progressTintColor = #colorLiteral(red: 0.1098039216, green: 0.8470588235, blue: 1, alpha: 1)
-        cell.goalProgressBar.trackTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        cell.goalProgressBar.progressTintColor = BarThemes.sliderBlueGreenColor
+        cell.goalProgressBar.trackTintColor = BarThemes.sliderGrayColor
         cell.goalProgressBar.transform = cell.goalProgressBar.transform.scaledBy(x: 1, y: 5)
         cell.goalProgressBar.layer.cornerRadius = 8
         cell.goalProgressBar.clipsToBounds = true

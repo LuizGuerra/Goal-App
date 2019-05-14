@@ -26,8 +26,5 @@ class NewGoalFirstPage: ViewController{
         priorityBar.setAppSliderDefaults()
         print(goalHolderLabel)
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        priorityBar.setAppSliderDefaults()
-//    }
 }
 
