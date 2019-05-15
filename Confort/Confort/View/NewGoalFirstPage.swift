@@ -27,8 +27,8 @@ class NewGoalFirstPage: ViewController{
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
         self.changeTabBarCollorToGradient()
+        super.viewWillDisappear(animated)
     }
 }
 
