@@ -9,10 +9,6 @@
 import Foundation
 
 struct Step: Temporal, Money, Geographic{
-    var stepId: Int
     var name: String
-    var description: String
-    var start: Date
-    var end: Date
     var isCompleted: Bool
 }

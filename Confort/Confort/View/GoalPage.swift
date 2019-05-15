@@ -26,7 +26,23 @@ class GoalPage: UIViewController {
     }
     
     let goals: [Goal] = [
-    Goal(title: "Um objetivo", description: "Quero muito atingir esse objetivo", step: ["Primeiro passo", "Segundo passo"], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
+    Goal(title: "Change professional career", description: "I'm not satisfied with my professional carrer. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: false),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Primeiro passo", isCompleted: true),
+        Step(name: "Segundo passo", isCompleted: true)], color: .clear, priority: 10, progression: 0.1, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Quero parar de fumar", description: "Preciso parar de fumar por conta da minha saúde", step: [], color: .clear, priority: 10, progression: 0.12, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: [], color: .clear, priority: 10, progression: 0.62, typeOfGoal: .money, notification: true, categories: []),
     Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: [], color: .clear, priority: 10, progression: 0.30, typeOfGoal: .money, notification: true, categories: []),
@@ -57,13 +73,25 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails", let detailVC = segue.destination as? GoalDetail, let selectedInfo = sender as? Goal{
             detailVC.goal = selectedInfo
-            print(selectedInfo.step[0])
+            
         }
     }
 //    END SEGUE FOR DETAILS
     
+    func progressionStatus(goal: Goal) -> Double{
+        var completed = 0.0
+        for step in goal.step {
+            if step.isCompleted == true{
+                completed += 1
+            }
+        }
+        let total = completed / Double(goal.step.count)
+        
+        return total
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,10 +99,11 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         let goal = goals[indexPath[1]]
+        cell.card.addShadowToView()
         cell.goal = goal
         cell.card.layer.cornerRadius = 20.0
         cell.card.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        cell.goalProgressBar.progress = goal.progression
+        cell.goalProgressBar.progress = Float(progressionStatus(goal: goal))
         cell.goalProgressBar.progressTintColor = BarThemes.sliderBlueGreenColor
         cell.goalProgressBar.trackTintColor = BarThemes.sliderGrayColor
         cell.goalProgressBar.transform = CGAffineTransform(scaleX: 1, y:5)

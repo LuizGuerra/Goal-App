@@ -36,8 +36,7 @@ extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
         guard let cell = stepTableView.dequeueReusableCell(withIdentifier: "DetailGoalCell") as? DetailGoalCell else{
             return UITableViewCell()
         }
-        
-        cell.progressStatus.progress = goal!.progression
+        cell.progressStatus.progress = Float(progressionStatus(goal: goal!))
         cell.progressStatus.progressTintColor = BarThemes.sliderBlueGreenColor
         cell.progressStatus.trackTintColor = BarThemes.sliderGrayColor
         cell.progressStatus.transform = CGAffineTransform(scaleX: 1, y:5)
@@ -50,12 +49,17 @@ extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-//    func progressionStatus(goal: Goal) -> Double{
-//        let completed = 0
-//        for step in goal.step {
-//            if
-//        }
-//    }
+    func progressionStatus(goal: Goal) -> Double{
+        var completed = 0.0
+        for step in goal.step {
+            if step.isCompleted == true{
+                completed += 1
+            }
+        }
+        let total = completed / Double(goal.step.count)
+        
+        return total
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
@@ -70,7 +74,7 @@ extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         print(indexPath)
-        cell.stepTitle.text = goal?.step[indexPath[1]]
+        cell.stepTitle.text = goal?.step[indexPath[1]].name
         return cell
     }
 }
