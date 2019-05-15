@@ -12,7 +12,9 @@ class EnableStepCreation: UIViewController {
 
     @IBOutlet weak var enableSlider: CustomSlider!
     @IBOutlet weak var stepsTableView: UITableView!
-    var steps = ["Skdjsl jdskflkjs kdjfdm", "Jdklljs sdkjfks sdjfks", "KJkjsdsljf ksdfkj ksdfj", "KJjdskjsdj skdjflk skdlkdf", "HKJBjshdfj jdshfksj"]
+    var steps: [String] = []
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,8 @@ class EnableStepCreation: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+ 
+    
     override func viewWillAppear(_ animated: Bool) {
         enableSlider.setAppSliderBlue()
     }
@@ -35,7 +38,8 @@ extension EnableStepCreation : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == steps.count {
-            guard let cell = stepsTableView.dequeueReusableCell(withIdentifier: "StepsSecondCell") else { fatalError() }
+            guard let cell = stepsTableView.dequeueReusableCell(withIdentifier: "StepsSecondCell") as? StepsSecondCell else { fatalError() }
+            cell.stepsTextField.delegate = self
             
             return cell
         } else {
@@ -57,4 +61,11 @@ extension EnableStepCreation : UITableViewDataSource {
 
 extension EnableStepCreation : UITableViewDelegate {
     
+}
+
+extension EnableStepCreation : UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        steps.append(textField.text!)
+        stepsTableView.reloadData()
+    }
 }
