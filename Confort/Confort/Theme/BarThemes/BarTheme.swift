@@ -8,8 +8,10 @@
 
 import UIKit
 
-class SliderTheme {
+class BarThemes {
     
+    static let sliderThumbVector = UIImage(named: "thumbVetor")
+    static let sliderThumbImage = UIImage(named: "thumbImage")
     static let sliderBlueGreenColor = UIColor(named: "SliderBlueGreen" )
     static let sliderGrayColor = UIColor(named: "SliderGray" )
     
