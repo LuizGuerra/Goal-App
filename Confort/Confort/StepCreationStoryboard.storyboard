@@ -163,7 +163,7 @@
     </scenes>
     <resources>
         <image name="Check" width="16" height="12"/>
-        <image name="Rectangle 2" width="1506" height="1506"/>
-        <image name="steps" width="8.6666669845581055" height="31.333333969116211"/>
+        <image name="Rectangle 2" width="753" height="753"/>
+        <image name="steps" width="13" height="47"/>
     </resources>
 </document>

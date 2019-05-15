@@ -13,10 +13,10 @@ struct Goal {
     var title: String
     var description: String
     var step: [Step]
-    var color: UIColor
-    var priority: Int
-    var progression: Float
-    var typeOfGoal: TypeOfGoal
-    var notification: Bool
-    var categories: [String]
+//    var color: UIColor
+//    var priority: Int
+//    var progression: Float
+//    var typeOfGoal: TypeOfGoal
+//    var notification: Bool
+//    var categories: [String]
 }
