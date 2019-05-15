@@ -17,14 +17,18 @@ class NewGoalFirstPage: ViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //goalLabel.adjustsFontSizeToFitWidth = true
         disableSlider.isEnabled = false
+        self.changeTabBarCollorToWhite()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         priorityBar.setAppSliderDefaults()
-        print(goalHolderLabel)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.changeTabBarCollorToGradient()
+        super.viewWillDisappear(animated)
     }
 }
 

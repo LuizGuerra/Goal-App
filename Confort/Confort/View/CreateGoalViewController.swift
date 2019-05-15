@@ -26,7 +26,7 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.descriptionTextView.addShadowToView()
         self.typePicker.addShadowToView()
         
-        self.changeTabBarCollorToWhite()
+        
 
         typePicker.delegate = self
         typePicker.dataSource = self
