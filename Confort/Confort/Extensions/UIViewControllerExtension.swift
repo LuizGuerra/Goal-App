@@ -16,8 +16,10 @@ extension UIViewController {
     }
     
     func changeTabBarCollorToWhite () {
-        if let navBarAppearance = self.navigationController?.navigationBar
-        { navBarAppearance.barStyle = .black }
+        if let navBarAppearance = self.navigationController?.navigationBar {
+            navBarAppearance.setBackgroundImage(nil, for: .default)
+//            navBarAppearance.barStyle = UIBarStyle.default
+        }
     }
 
 }
