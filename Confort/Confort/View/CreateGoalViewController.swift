@@ -35,6 +35,8 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
         descriptionTextView.layer.cornerRadius = 14;
 //        descriptionTextView.delegate = self
         
+       
+        
     }
 
     
@@ -48,6 +50,14 @@ class CreateGoalViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerTypeData[row]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVC = segue.destination as? EnableStepCreation, let title = titleTextField.text, !title.isEmpty {
+            let goal = Goal(title: title, description: descriptionTextView.text, step: [])
+            nextVC.goal = goal
+        }
+        
     }
     
 }

@@ -12,14 +12,18 @@ class EnableStepCreation: UIViewController {
 
     @IBOutlet weak var enableSlider: CustomSlider!
     @IBOutlet weak var stepsTableView: UITableView!
-    var steps: [String] = []
-
-    
+    var steps: [Step] = []
+    var goal: Goal?
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         stepsTableView.dataSource = self
         stepsTableView.delegate = self
+        titleLabel.text = goal?.title
+        descriptionLabel.text = goal?.description
+        goal?.step = steps
         // Do any additional setup after loading the view.
     }
     
@@ -46,7 +50,7 @@ extension EnableStepCreation : UITableViewDataSource {
             
             guard let cell = stepsTableView.dequeueReusableCell(withIdentifier: "StepsFirstCell") as? StepsFirstCell else { return UITableViewCell() }
             
-            cell.labelSteps.text = steps[indexPath.row]
+            cell.labelSteps.text = steps[indexPath.row].name
             let image = UIImage(named: "Group 2")
             cell.stepsImageView.image = image
             
@@ -65,7 +69,7 @@ extension EnableStepCreation : UITableViewDelegate {
 
 extension EnableStepCreation : UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        steps.append(textField.text!)
+        steps.append(Step(name: textField.text!, isCompleted: false))
         stepsTableView.reloadData()
     }
 }
