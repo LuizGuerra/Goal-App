@@ -40,7 +40,7 @@ class GoalPage: UIViewController {
         Step(name: "14", isCompleted: false),
         Step(name: "15", isCompleted: false),
         Step(name: "16", isCompleted: false),
-        Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: []),Goal(title: "Começar um curso de francês", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+        Step(name: "17", isCompleted: false)]),Goal(title: "Começar um curso de francês", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
             Step(name: "2", isCompleted: false),
             Step(name: "3", isCompleted: false),
             Step(name: "4", isCompleted: false),
@@ -56,7 +56,7 @@ class GoalPage: UIViewController {
             Step(name: "14", isCompleted: false),
             Step(name: "15", isCompleted: false),
             Step(name: "16", isCompleted: false),
-            Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: []),
+            Step(name: "17", isCompleted: false)]),
         Goal(title: "Perder peso", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
             Step(name: "2", isCompleted: false),
             Step(name: "3", isCompleted: false),
@@ -73,7 +73,7 @@ class GoalPage: UIViewController {
             Step(name: "14", isCompleted: false),
             Step(name: "15", isCompleted: false),
             Step(name: "16", isCompleted: false),
-            Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: [])]
+            Step(name: "17", isCompleted: false)])]
 }
 
 extension GoalPage: UITableViewDataSource, UITableViewDelegate {
