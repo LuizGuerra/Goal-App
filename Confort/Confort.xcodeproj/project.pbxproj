@@ -42,6 +42,8 @@
 		F27A56A6228B2CBD003FE3D8 /* GoalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */; };
 		F27A56A8228B2F59003FE3D8 /* DetailGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */; };
 		F27A56AA228B2FD5003FE3D8 /* DetailStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */; };
+		F27D35FF228C9AC200B22AFD /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */; };
+		F27D3601228C9FA700B22AFD /* MobileApplication.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F27D3600228C9B4800B22AFD /* MobileApplication.mp4 */; };
 		F2938ECB22849D60008423DD /* GoalCellExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECA22849D60008423DD /* GoalCellExpanded.swift */; };
 		F2938ECF2284BBFA008423DD /* GoalStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECE2284BBFA008423DD /* GoalStepCell.swift */; };
 		F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
@@ -114,6 +116,8 @@
 		F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetail.swift; sourceTree = "<group>"; };
 		F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoalCell.swift; sourceTree = "<group>"; };
 		F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStepCell.swift; sourceTree = "<group>"; };
+		F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchViewController.swift; path = ../LaunchViewController.swift; sourceTree = "<group>"; };
+		F27D3600228C9B4800B22AFD /* MobileApplication.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = MobileApplication.mp4; path = ../../../../../Downloads/MobileApplication.mp4; sourceTree = "<group>"; };
 		F2938ECA22849D60008423DD /* GoalCellExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellExpanded.swift; sourceTree = "<group>"; };
 		F2938ECE2284BBFA008423DD /* GoalStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalStepCell.swift; sourceTree = "<group>"; };
 		F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalFirstPage.swift; sourceTree = "<group>"; };
@@ -246,8 +250,8 @@
 			children = (
 				F2CAC9852278D9AD0086B761 /* GoalPage.swift */,
 				F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */,
-				F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */,
 				F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */,
+				F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */,
 				F2938ECE2284BBFA008423DD /* GoalStepCell.swift */,
 				F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */,
 				F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */,
@@ -258,6 +262,8 @@
 				68985FCE2284A52700866B7A /* EnableStepCreation.swift */,
 				681D18A82289E2B100ABC91C /* StepsFirstCell.swift */,
 				6880489A228B4080002BBA44 /* StepsSecondCell.swift */,
+				F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */,
+				F27D3600228C9B4800B22AFD /* MobileApplication.mp4 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
 				046D41352284B4B500873051 /* Assets.xcassets in Resources */,
 				04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */,
+				F27D3601228C9FA700B22AFD /* MobileApplication.mp4 in Resources */,
 				68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */,
+				F27D35FF228C9AC200B22AFD /* LaunchViewController.swift in Sources */,
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				681D18A92289E2B100ABC91C /* StepsFirstCell.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,

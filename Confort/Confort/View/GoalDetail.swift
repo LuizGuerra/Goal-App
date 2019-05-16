@@ -11,15 +11,25 @@ import UIKit
 class GoalDetail: UIViewController{
     @IBOutlet weak var stepTableView: UITableView!
     var goal: Goal?
+    weak var delegate2: GoalAtualization?
+    
+    var finishedSteps: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        stepTableView.allowsSelection = false
         stepTableView.dataSource = self
         stepTableView.rowHeight = UITableView.automaticDimension
         stepTableView.estimatedRowHeight = 100
         stepTableView.delegate = self
         stepTableView.separatorStyle = .none
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate2?.goalAtualization(goal: goal!)
+    }
+    
 }
 
 extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
@@ -50,15 +60,7 @@ extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
     }
     
     func progressionStatus(goal: Goal) -> Double{
-        var completed = 0.0
-        for step in goal.step {
-            if step.isCompleted == true{
-                completed += 1
-            }
-        }
-        let total = completed / Double(goal.step.count)
-        
-        return total
+        return Double(finishedSteps.count) / Double(goal.step.count)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,8 +75,39 @@ extension GoalDetail: UITableViewDataSource, UITableViewDelegate {
         guard let cell = stepTableView.dequeueReusableCell(withIdentifier: "DetailStepCell") as? DetailStepCell else{
             return UITableViewCell()
         }
+        cell.delegate = self
         print(indexPath)
-        cell.stepTitle.text = goal?.step[indexPath[1]].name
+        cell.stepTitle.text = goal?.step[indexPath.row].name
+        
+        if goal!.step[indexPath.row].isCompleted {
+            cell.completedButton.setBackgroundImage(UIImage(named: "Step Completion #1 2"), for: .normal)
+        } else {
+            cell.completedButton.setBackgroundImage(UIImage(named: "Open Step 2"), for: .normal)
+        }
         return cell
+    }
+}
+
+protocol GoalAtualization: class{
+    func goalAtualization(goal: Goal)
+}
+
+extension GoalDetail: ButtonSelectedDelegate {
+    func buttonTapped(sender: String) {
+        if finishedSteps.contains(sender){
+            finishedSteps.removeAll(where: { $0 == sender })
+            for i in 0..<goal!.step.count {
+                if sender == goal!.step[i].name {
+                    goal!.step[i].isCompleted.toggle()
+                }
+            }
+        }
+        else{
+            finishedSteps.append(sender)
+        }
+        for i in 0..<finishedSteps.count {
+            goal?.step[i].isCompleted = true
+        }
+        stepTableView.reloadData()
     }
 }
