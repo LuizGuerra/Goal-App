@@ -11,6 +11,7 @@ import UIKit
 class GoalPage: UIViewController {
     @IBOutlet weak var goalTableView: UITableView!
     @IBOutlet weak var addGoal: UIBarButtonItem!
+    var goal: Goal?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,57 +24,37 @@ class GoalPage: UIViewController {
         goalTableView.separatorStyle = .none
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        goal = EnableStepCreation.createdGoal
+        if (goal?.title != nil && goal?.description != nil && goal?.step != nil){
+            goals.append(goal!)
+        }
+        goalTableView.reloadData()
+        
+    }
+    
     var goals: [Goal] = [
-    Goal(title: "Change professional career", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
-        Step(name: "2", isCompleted: false),
-        Step(name: "3", isCompleted: false),
-        Step(name: "4", isCompleted: false),
-        Step(name: "5", isCompleted: false),
-        Step(name: "6", isCompleted: false),
-        Step(name: "7", isCompleted: false),
-        Step(name: "8", isCompleted: false),
-        Step(name: "9", isCompleted: false),
-        Step(name: "10", isCompleted: false),
-        Step(name: "11", isCompleted: false),
-        Step(name: "12", isCompleted: false),
-        Step(name: "13", isCompleted: false),
-        Step(name: "14", isCompleted: false),
-        Step(name: "15", isCompleted: false),
-        Step(name: "16", isCompleted: false),
-        Step(name: "17", isCompleted: false)]),Goal(title: "Começar um curso de francês", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
-            Step(name: "2", isCompleted: false),
-            Step(name: "3", isCompleted: false),
-            Step(name: "4", isCompleted: false),
-            Step(name: "5", isCompleted: false),
-            Step(name: "6", isCompleted: false),
-            Step(name: "7", isCompleted: false),
-            Step(name: "8", isCompleted: false),
-            Step(name: "9", isCompleted: false),
-            Step(name: "10", isCompleted: false),
-            Step(name: "11", isCompleted: false),
-            Step(name: "12", isCompleted: false),
-            Step(name: "13", isCompleted: false),
-            Step(name: "14", isCompleted: false),
-            Step(name: "15", isCompleted: false),
-            Step(name: "16", isCompleted: false),
-            Step(name: "17", isCompleted: false)]),
-        Goal(title: "Perder peso", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
-            Step(name: "2", isCompleted: false),
-            Step(name: "3", isCompleted: false),
-            Step(name: "4", isCompleted: false),
-            Step(name: "5", isCompleted: false),
-            Step(name: "6", isCompleted: false),
-            Step(name: "7", isCompleted: false),
-            Step(name: "8", isCompleted: false),
-            Step(name: "9", isCompleted: false),
-            Step(name: "10", isCompleted: false),
-            Step(name: "11", isCompleted: false),
-            Step(name: "12", isCompleted: false),
-            Step(name: "13", isCompleted: false),
-            Step(name: "14", isCompleted: false),
-            Step(name: "15", isCompleted: false),
-            Step(name: "16", isCompleted: false),
-            Step(name: "17", isCompleted: false)])]
+        Goal(title: "Change my career", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+            Step(name: "Look for a new course where i really feel good", isCompleted: false),
+            Step(name: "Search for entrance exams that offer this course", isCompleted: false),
+            Step(name: "Seek information on the labor market", isCompleted: false),
+            Step(name: "Get the documentation to present in college", isCompleted: false)]),
+        Goal(title: "Adopt a cat", description: "I feel alone at home and would like to adopt a cat to have a company at all times.", step: [
+            Step(name: "Search for cats", isCompleted: false),
+            Step(name: "Select a name", isCompleted: true),
+            Step(name: "Buy a cat house", isCompleted: false),
+            Step(name: "Buy a cat scratcher", isCompleted: true),
+            Step(name: "Buy cat toys", isCompleted: true)]),
+        Goal(title: "Lose weight", description: "I do not feel well today with my body and I know I can change that by keeping my focus", step: [
+            Step(name: "Change my alimentation", isCompleted: false),
+            Step(name: "Seek academy", isCompleted: true),
+            Step(name: "Seek nutritionist", isCompleted: false),
+            Step(name: "Seek personal trainer", isCompleted: true)])]
+    
+    
+    
 }
 
 extension GoalPage: UITableViewDataSource, UITableViewDelegate {

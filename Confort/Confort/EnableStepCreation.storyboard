@@ -198,6 +198,9 @@
                     <navigationItem key="navigationItem" title="New Goal" id="7Yp-kd-rkY">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="Check" id="ItA-BZ-qWR">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="checkPressed:" destination="YZf-H3-gTt" id="9PK-jr-EeB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -207,11 +210,21 @@
                         <outlet property="enableSlider" destination="J3G-4H-H4Z" id="aco-UY-htP"/>
                         <outlet property="stepsTableView" destination="pEH-2s-dLl" id="vOr-rz-bPu"/>
                         <outlet property="titleLabel" destination="rww-L8-lfe" id="Nju-td-aw6"/>
+                        <segue destination="bpJ-tr-ymk" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="hFv-5F-9qq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nO-p5-vpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bpJ-tr-ymk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-293" y="11"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="vgk-EB-JkH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Home" id="NH0-HF-OlY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6S-Bm-kGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="11"/>
         </scene>
     </scenes>
     <resources>
