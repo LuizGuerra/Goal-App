@@ -18,7 +18,7 @@ class NewGoalFirstPage: ViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         disableSlider.isEnabled = false
-        self.changeTabBarCollorToWhite()
+//        self.changeTabBarCollorToWhite()
     }
 
     override func viewWillAppear(_ animated: Bool) {
