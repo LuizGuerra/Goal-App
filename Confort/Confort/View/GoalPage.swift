@@ -16,8 +16,6 @@ class GoalPage: UIViewController {
         super.viewDidLoad()
         
         self.changeTabBarCollorToGradient()
-        
-        
         goalTableView.dataSource = self
         goalTableView.rowHeight = UITableView.automaticDimension
         goalTableView.estimatedRowHeight = 100
@@ -25,37 +23,57 @@ class GoalPage: UIViewController {
         goalTableView.separatorStyle = .none
     }
     
-    let goals: [Goal] = [
-    Goal(title: "Change professional career", description: "I'm not satisfied with my professional carrer. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: false),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Primeiro passo", isCompleted: true),
-        Step(name: "Segundo passo", isCompleted: true)]),
-    Goal(title: "Quero parar de fumar", description: "Preciso parar de fumar por conta da minha saúde", step: []),
-    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: []),
-    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: []),
-    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: []),
-    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: []),
-    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: []),
-    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: []),
-    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: []),
-    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: []),
-    Goal(title: "Preciso guardar dinheiro", description: "Caso não guarde 200 reais nesse mês, terminarei no vermelho", step: []),
-    Goal(title: "Preciso emagrecer", description: "Preciso perder 15kg no próximo ano", step: []),
-    Goal(title: "Outro objetivo", description: "Quero muito atingir esse objetivo", step: []),
-    Goal(title: "Algum outro objetivo", description: "Quero muito atingir esse objetivo", step: [])]
+    var goals: [Goal] = [
+    Goal(title: "Change professional career", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+        Step(name: "2", isCompleted: false),
+        Step(name: "3", isCompleted: false),
+        Step(name: "4", isCompleted: false),
+        Step(name: "5", isCompleted: false),
+        Step(name: "6", isCompleted: false),
+        Step(name: "7", isCompleted: false),
+        Step(name: "8", isCompleted: false),
+        Step(name: "9", isCompleted: false),
+        Step(name: "10", isCompleted: false),
+        Step(name: "11", isCompleted: false),
+        Step(name: "12", isCompleted: false),
+        Step(name: "13", isCompleted: false),
+        Step(name: "14", isCompleted: false),
+        Step(name: "15", isCompleted: false),
+        Step(name: "16", isCompleted: false),
+        Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: []),Goal(title: "Começar um curso de francês", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+            Step(name: "2", isCompleted: false),
+            Step(name: "3", isCompleted: false),
+            Step(name: "4", isCompleted: false),
+            Step(name: "5", isCompleted: false),
+            Step(name: "6", isCompleted: false),
+            Step(name: "7", isCompleted: false),
+            Step(name: "8", isCompleted: false),
+            Step(name: "9", isCompleted: false),
+            Step(name: "10", isCompleted: false),
+            Step(name: "11", isCompleted: false),
+            Step(name: "12", isCompleted: false),
+            Step(name: "13", isCompleted: false),
+            Step(name: "14", isCompleted: false),
+            Step(name: "15", isCompleted: false),
+            Step(name: "16", isCompleted: false),
+            Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: []),
+        Goal(title: "Perder peso", description: "I'm not satisfied with my professional career. I know people that are following their dreams, putting their faces out there and i believe i have the strength to do so as well. I have to give it a shot!", step: [
+            Step(name: "2", isCompleted: false),
+            Step(name: "3", isCompleted: false),
+            Step(name: "4", isCompleted: false),
+            Step(name: "5", isCompleted: false),
+            Step(name: "6", isCompleted: false),
+            Step(name: "7", isCompleted: false),
+            Step(name: "8", isCompleted: false),
+            Step(name: "9", isCompleted: false),
+            Step(name: "10", isCompleted: false),
+            Step(name: "11", isCompleted: false),
+            Step(name: "12", isCompleted: false),
+            Step(name: "13", isCompleted: false),
+            Step(name: "14", isCompleted: false),
+            Step(name: "15", isCompleted: false),
+            Step(name: "16", isCompleted: false),
+            Step(name: "17", isCompleted: false)], color: .clear, priority: 10, progression: 0.0, typeOfGoal: .money, notification: true, categories: [])]
 }
 
 extension GoalPage: UITableViewDataSource, UITableViewDelegate {
@@ -71,8 +89,9 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails", let detailVC = segue.destination as? GoalDetail, let selectedInfo = sender as? Goal{
+        if segue.identifier == "showDetails", let detailVC = segue.destination as? GoalDetail, let selectedInfo = sender as? Goal {
             detailVC.goal = selectedInfo
+            detailVC.delegate2 = self
             
         }
     }
@@ -91,7 +110,7 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 95
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -103,7 +122,11 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
         cell.goal = goal
         cell.card.layer.cornerRadius = 20.0
         cell.card.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        cell.goalProgressBar.progress = Float(progressionStatus(goal: goal))
+        if goal.step.count == 0 {
+            cell.goalProgressBar.progress = 0.0
+        }else{
+            cell.goalProgressBar.progress = Float(progressionStatus(goal: goal))
+        }
         cell.goalProgressBar.progressTintColor = BarThemes.sliderBlueGreenColor
         cell.goalProgressBar.trackTintColor = BarThemes.sliderGrayColor
         cell.goalProgressBar.transform = CGAffineTransform(scaleX: 1, y:5)
@@ -116,3 +139,15 @@ extension GoalPage: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+extension GoalPage: GoalAtualization {
+    func goalAtualization(goal: Goal) {
+        var indexes: [IndexPath] = []
+        for i in 0 ..< goals.count {
+            if goal.title == goals[i].title {
+                goals[i] = goal
+                indexes.append(IndexPath(row: i, section: 0))
+            }
+        }
+        goalTableView.reloadRows(at: indexes, with: .automatic)
+    }
+}
