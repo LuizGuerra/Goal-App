@@ -13,9 +13,12 @@ class EnableStepCreation: UIViewController {
     @IBOutlet weak var enableSlider: CustomSlider!
     @IBOutlet weak var stepsTableView: UITableView!
     var steps: [Step] = []
-    var goal: Goal?
+    var goal: Goal? 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
+    
+    
+    static var createdGoal: Goal?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +26,25 @@ class EnableStepCreation: UIViewController {
         stepsTableView.delegate = self
         titleLabel.text = goal?.title
         descriptionLabel.text = goal?.description
-        goal?.step = steps
         // Do any additional setup after loading the view.
+    }
+    @IBAction func checkPressed(_ sender: UIBarButtonItem) {
+        
+//        performSegue(withIdentifier: "unwindToHome",
+//                     sender: goal)
+        goal?.step = steps
+        EnableStepCreation.createdGoal = goal
+        self.navigationController?.popToRootViewController(animated: true)
+        
+        print("Here")
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVC = segue.destination as? GoalPage {
+            let goals = Goal(title: goal!.title, description: goal!.description, step: goal!.step)
+            nextVC.goal = goals
+        }
     }
     
  

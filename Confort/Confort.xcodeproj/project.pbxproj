@@ -28,6 +28,7 @@
 		688B2EA8227B58190037B7C1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA7227B58190037B7C1 /* Step.swift */; };
 		688B2EAA227B59C80037B7C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EA9227B59C80037B7C1 /* User.swift */; };
 		688B2EAE227B5E000037B7C1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B2EAD227B5E000037B7C1 /* Badge.swift */; };
+		689647B2228DE39600CF7752 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689647B1228DE39600CF7752 /* TabBarController.swift */; };
 		68985FC9228355EA00866B7A /* StepCreationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */; };
 		68985FCD22849F3400866B7A /* EnableStepCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68985FCC22849F3400866B7A /* EnableStepCreation.storyboard */; };
 		68985FCF2284A52700866B7A /* EnableStepCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68985FCE2284A52700866B7A /* EnableStepCreation.swift */; };
@@ -100,6 +101,7 @@
 		688B2EA9227B59C80037B7C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		688B2EAB227B5D860037B7C1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		688B2EAD227B5E000037B7C1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		689647B1228DE39600CF7752 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		68985FC8228355EA00866B7A /* StepCreationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StepCreationStoryboard.storyboard; sourceTree = "<group>"; };
 		68985FCA22836B9100866B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68985FCC22849F3400866B7A /* EnableStepCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnableStepCreation.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				68985FCA22836B9100866B7A /* Assets.xcassets */,
 				04694FA722777DA300FDA41D /* Confort.xcdatamodeld */,
 				68985FCC22849F3400866B7A /* EnableStepCreation.storyboard */,
+				689647B1228DE39600CF7752 /* TabBarController.swift */,
 			);
 			path = Confort;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				68985FCF2284A52700866B7A /* EnableStepCreation.swift in Sources */,
 				688B2EAA227B59C80037B7C1 /* User.swift in Sources */,
 				04694FA922777DA300FDA41D /* Confort.xcdatamodeld in Sources */,
+				689647B2228DE39600CF7752 /* TabBarController.swift in Sources */,
 				F2938ECB22849D60008423DD /* GoalCellExpanded.swift in Sources */,
 				F2938ECF2284BBFA008423DD /* GoalStepCell.swift in Sources */,
 				F2CAC9862278D9AD0086B761 /* GoalPage.swift in Sources */,
@@ -668,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LGVPHY8YW;
 				INFOPLIST_FILE = Confort/Info.plist;
@@ -686,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5LGVPHY8YW;
 				INFOPLIST_FILE = Confort/Info.plist;
