@@ -38,10 +38,12 @@
 		68CBEB912278E48000D100AF /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB902278E48000D100AF /* Bar.swift */; };
 		68CBEB932278E4B300D100AF /* TypeOfGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB922278E4B300D100AF /* TypeOfGoal.swift */; };
 		68CBEB952278E65900D100AF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEB942278E65900D100AF /* Protocols.swift */; };
+		F24A86F5228DD2C50009A22B /* MobileApplication.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F24A86F4228DD2C50009A22B /* MobileApplication.mp4 */; };
 		F2575CB22283492100A7F709 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2575CB12283492100A7F709 /* FormTableViewController.swift */; };
 		F27A56A6228B2CBD003FE3D8 /* GoalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */; };
 		F27A56A8228B2F59003FE3D8 /* DetailGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */; };
 		F27A56AA228B2FD5003FE3D8 /* DetailStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */; };
+		F27D35FF228C9AC200B22AFD /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */; };
 		F2938ECB22849D60008423DD /* GoalCellExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECA22849D60008423DD /* GoalCellExpanded.swift */; };
 		F2938ECF2284BBFA008423DD /* GoalStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2938ECE2284BBFA008423DD /* GoalStepCell.swift */; };
 		F2B6C5A1227B7903009B401C /* NewGoalFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */; };
@@ -110,10 +112,12 @@
 		68CBEB902278E48000D100AF /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		68CBEB922278E4B300D100AF /* TypeOfGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfGoal.swift; sourceTree = "<group>"; };
 		68CBEB942278E65900D100AF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F24A86F4228DD2C50009A22B /* MobileApplication.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MobileApplication.mp4; sourceTree = "<group>"; };
 		F2575CB12283492100A7F709 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetail.swift; sourceTree = "<group>"; };
 		F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoalCell.swift; sourceTree = "<group>"; };
 		F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStepCell.swift; sourceTree = "<group>"; };
+		F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchViewController.swift; path = ../LaunchViewController.swift; sourceTree = "<group>"; };
 		F2938ECA22849D60008423DD /* GoalCellExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellExpanded.swift; sourceTree = "<group>"; };
 		F2938ECE2284BBFA008423DD /* GoalStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalStepCell.swift; sourceTree = "<group>"; };
 		F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalFirstPage.swift; sourceTree = "<group>"; };
@@ -246,8 +250,8 @@
 			children = (
 				F2CAC9852278D9AD0086B761 /* GoalPage.swift */,
 				F27A56A5228B2CBD003FE3D8 /* GoalDetail.swift */,
-				F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */,
 				F27A56A9228B2FD5003FE3D8 /* DetailStepCell.swift */,
+				F27A56A7228B2F59003FE3D8 /* DetailGoalCell.swift */,
 				F2938ECE2284BBFA008423DD /* GoalStepCell.swift */,
 				F2B6C5A0227B7903009B401C /* NewGoalFirstPage.swift */,
 				F2B6C5A2227B84BB009B401C /* TableViewCellNewGoalFirstPage.swift */,
@@ -258,6 +262,8 @@
 				68985FCE2284A52700866B7A /* EnableStepCreation.swift */,
 				681D18A82289E2B100ABC91C /* StepsFirstCell.swift */,
 				6880489A228B4080002BBA44 /* StepsSecondCell.swift */,
+				F27D35FE228C9AC200B22AFD /* LaunchViewController.swift */,
+				F24A86F4228DD2C50009A22B /* MobileApplication.mp4 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				04694FA622777DA300FDA41D /* Main.storyboard in Resources */,
 				046D41352284B4B500873051 /* Assets.xcassets in Resources */,
 				04DDAA582283961D005E53EE /* TabBarCatalog.xcassets in Resources */,
+				F24A86F5228DD2C50009A22B /* MobileApplication.mp4 in Resources */,
 				68CABABE227CAA5400B81559 /* GoalCreationStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046D41362284BC6B00873051 /* NewGoalFirstPage.swift in Sources */,
+				F27D35FF228C9AC200B22AFD /* LaunchViewController.swift in Sources */,
 				68CBEB912278E48000D100AF /* Bar.swift in Sources */,
 				681D18A92289E2B100ABC91C /* StepsFirstCell.swift in Sources */,
 				688B2EA8227B58190037B7C1 /* Step.swift in Sources */,

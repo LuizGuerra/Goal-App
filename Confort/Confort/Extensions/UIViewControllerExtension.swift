@@ -11,13 +11,15 @@ import UIKit
 extension UIViewController {
 
     func changeTabBarCollorToGradient () {
-        if let navBarAppearance = self.navigationController?.navigationBar, let imageForBackground = UIImage(named: "Rectangle 2")
-        { navBarAppearance.setBackgroundImage(imageForBackground, for: .default) }
+        if let navBarAppearance = self.navigationController?.navigationBar, let imageForBackground = UIImage(named: "NavBar BG") {
+            navBarAppearance.setBackgroundImage(imageForBackground, for: .default)
+        }
     }
     
     func changeTabBarCollorToWhite () {
-        if let navBarAppearance = self.navigationController?.navigationBar
-        { navBarAppearance.barStyle = .black }
+        if let navBarAppearance = self.navigationController?.navigationBar {
+            navBarAppearance.setBackgroundImage(nil, for: .default)
+        }
     }
 
 }
